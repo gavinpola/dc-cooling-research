@@ -527,6 +527,7 @@
                 <li><a href="#thesis-a">Thesis A</a></li>
                 <li><a href="#thesis-b">Thesis B</a></li>
                 <li><a href="#thesis-c">Thesis C</a></li>
+                <li><a href="#modality">Modality Competition</a></li>
                 <li><a href="#landscape">Competitive Landscape</a></li>
                 <li><a href="#portfolio">Investment Recommendations</a></li>
                 <li><a href="#startup-guide">Startup Guide</a></li>
@@ -833,6 +834,159 @@
                         </tr>
                     </tbody>
                 </table>
+            </section>
+
+            <!-- Liquid Cooling Modality Competition -->
+            <section id="modality">
+                <h2>Liquid Cooling Modality Competition: What Wins for Feynman (2028)?</h2>
+
+                <p>The "liquid vs air" debate is settled&mdash;liquid wins. The real question is: <strong>which liquid cooling modality dominates as TDP climbs toward 4-6kW per module?</strong></p>
+
+                <h3>The TDP Trajectory</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Architecture</th>
+                            <th>Year</th>
+                            <th>TDP (Module)</th>
+                            <th>Cooling Required</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hopper (H100)</td>
+                            <td>2022</td>
+                            <td>700W</td>
+                            <td>Air or liquid</td>
+                        </tr>
+                        <tr>
+                            <td>Blackwell (B200)</td>
+                            <td>2024</td>
+                            <td>1,200W</td>
+                            <td>Liquid mandatory</td>
+                        </tr>
+                        <tr>
+                            <td>Rubin (R100)</td>
+                            <td>2026</td>
+                            <td>2,000-2,300W</td>
+                            <td>Advanced liquid</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Feynman</strong></td>
+                            <td><strong>2028</strong></td>
+                            <td><strong>4,400-6,000W</strong></td>
+                            <td><strong>Embedded/microfluidic</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="insight-box">
+                    <strong>Key Insight:</strong> Feynman introduces 3D logic die stacking&mdash;multiple GPU dies stacked on top of each other. This isn't just higher TDP; it's a fundamental thermal architecture challenge that traditional cold plates cannot solve.
+                </div>
+
+                <h3>Modality Comparison</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modality</th>
+                            <th>Practical Ceiling</th>
+                            <th>Feynman Viability</th>
+                            <th>Key Players</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Single-Phase D2C</td>
+                            <td>~1,500-2,000W</td>
+                            <td style="color: #dc2626;">NOT VIABLE</td>
+                            <td>CoolIT, Asetek, Vertiv</td>
+                        </tr>
+                        <tr>
+                            <td>Two-Phase D2C</td>
+                            <td>~3,000-4,000W</td>
+                            <td style="color: #d97706;">MARGINAL</td>
+                            <td>ZutaCore, Accelsius</td>
+                        </tr>
+                        <tr>
+                            <td>Immersion (Single)</td>
+                            <td>~100kW/tank</td>
+                            <td style="color: #dc2626;">NOT VIABLE</td>
+                            <td>GRC, Submer</td>
+                        </tr>
+                        <tr>
+                            <td>Immersion (Two-Phase)</td>
+                            <td>~250kW/tank</td>
+                            <td style="color: #d97706;">POSSIBLE</td>
+                            <td>LiquidStack (Trane)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Embedded Microfluidics</strong></td>
+                            <td><strong>10kW+ theoretical</strong></td>
+                            <td style="color: #059669;"><strong>MOST LIKELY WINNER</strong></td>
+                            <td><strong>TSMC, Microsoft, JetCool</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>The Breakthrough: TSMC Direct-to-Silicon Cooling</h3>
+                <p>TSMC demonstrated direct-to-silicon liquid cooling at ECTC 2025, with micropillar arrays etched directly into the silicon backside. This achieves:</p>
+                <ul>
+                    <li><strong>Zero TIM:</strong> Coolant contacts silicon directly (no thermal interface material)</li>
+                    <li><strong>0.055 &deg;C/W thermal resistance</strong>&mdash;15% better than lidded solutions</li>
+                    <li><strong>2.6kW+ demonstrated</strong> with temperature delta under 63&deg;C</li>
+                    <li><strong>Backside cooling</strong>&mdash;essential for 3D-stacked Feynman architecture</li>
+                </ul>
+
+                <h3>2028 Prediction</h3>
+                <div class="verdict-grid">
+                    <div class="verdict-card buy">
+                        <h4>Most Likely (55%)</h4>
+                        <div class="thesis-name">Hybrid Approach</div>
+                        <p style="font-size: 13px; margin-top: 12px;">Two-phase D2C for rack-level heat rejection + TSMC embedded microfluidics for chip-level extraction</p>
+                    </div>
+                    <div class="verdict-card hold">
+                        <h4>Alternative (30%)</h4>
+                        <div class="thesis-name">Pure Embedded</div>
+                        <p style="font-size: 13px; margin-top: 12px;">TSMC's direct-to-silicon becomes standard; two-phase relegated to "legacy" 1-2kW devices</p>
+                    </div>
+                    <div class="verdict-card avoid">
+                        <h4>Unlikely (15%)</h4>
+                        <div class="thesis-name">Single-Phase Holds</div>
+                        <p style="font-size: 13px; margin-top: 12px;">GPU efficiency improves faster than expected; Feynman delayed or uses chiplet spread</p>
+                    </div>
+                </div>
+
+                <h3>Investment Implications</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modality</th>
+                            <th>2025-2027</th>
+                            <th>2028+ (Feynman)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Single-phase D2C</td>
+                            <td><strong>Dominant</strong></td>
+                            <td>Declining</td>
+                        </tr>
+                        <tr>
+                            <td>Two-phase D2C</td>
+                            <td><strong>Rising fast</strong></td>
+                            <td>Stable (mid-density)</td>
+                        </tr>
+                        <tr>
+                            <td>Embedded/Microfluidic</td>
+                            <td>Emerging</td>
+                            <td><strong>Dominant for high-end</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="insight-box">
+                    <strong>Watch Signals:</strong> TSMC IMC-Si commercialization timeline, Microsoft microfluidics production deployment, Rubin cooling specs, JetCool-TSMC partnership announcements, ZutaCore/Accelsius non-PFAS fluid launch (2026 commitment).
+                </div>
             </section>
 
             <!-- Competitive Landscape -->
