@@ -140,6 +140,21 @@
             color: #1a1a1a;
         }
 
+        /* Citation Styles */
+        .cite {
+            color: #2563eb;
+            font-size: 11px;
+            font-weight: 600;
+            vertical-align: super;
+            text-decoration: none;
+            margin-left: 1px;
+            cursor: pointer;
+        }
+
+        .cite:hover {
+            text-decoration: underline;
+        }
+
         /* Lead paragraph */
         .lead {
             font-size: 17px;
@@ -481,6 +496,43 @@
             margin-bottom: 0;
         }
 
+        /* References Section */
+        .references {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .references ol {
+            padding-left: 32px;
+        }
+
+        .references li {
+            margin-bottom: 12px;
+            padding-left: 8px;
+        }
+
+        .references a {
+            color: #2563eb;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        .ref-category {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 32px 0 16px;
+            color: #1a1a1a;
+        }
+
+        .ref-category:first-of-type {
+            margin-top: 0;
+        }
+
         /* Footer */
         footer {
             border-top: 1px solid #e5e5e5;
@@ -505,6 +557,9 @@
             }
             .container {
                 max-width: 100%;
+            }
+            .cite {
+                color: #000;
             }
         }
     </style>
@@ -531,7 +586,7 @@
                 <li><a href="#landscape">Competitive Landscape</a></li>
                 <li><a href="#portfolio">Investment Recommendations</a></li>
                 <li><a href="#startup-guide">Startup Guide</a></li>
-                <li><a href="#sources">Sources</a></li>
+                <li><a href="#references">References</a></li>
             </ul>
         </div>
     </nav>
@@ -550,7 +605,7 @@
                         <div class="thesis-name">Two-Phase Direct-to-Chip</div>
                         <div class="verdict-score">4.15</div>
                         <span class="verdict-label">Strong Buy</span>
-                        <p>Only technology capable of handling 120-500kW rack densities. Hyperscaler adoption validated.</p>
+                        <p>Only technology capable of handling 120-500kW rack densities.<a href="#ref-1" class="cite">[1]</a> Hyperscaler adoption validated.<a href="#ref-2" class="cite">[2]</a></p>
                     </div>
 
                     <div class="verdict-card hold">
@@ -558,7 +613,7 @@
                         <div class="thesis-name">High Ambient Tolerance</div>
                         <div class="verdict-score">3.45</div>
                         <span class="verdict-label">Hold</span>
-                        <p>Operational practice, not investable technology. Already adopted by leading hyperscalers.</p>
+                        <p>Operational practice, not investable technology. Already adopted by leading hyperscalers.<a href="#ref-3" class="cite">[3]</a></p>
                     </div>
 
                     <div class="verdict-card avoid">
@@ -566,7 +621,7 @@
                         <div class="thesis-name">Space-Based Radiative</div>
                         <div class="verdict-score">1.70</div>
                         <span class="verdict-label">Avoid</span>
-                        <p>Fundamental scale mismatch (500-5,000x). Physics constraints are insurmountable.</p>
+                        <p>Fundamental scale mismatch (500-5,000x).<a href="#ref-4" class="cite">[4]</a> Physics constraints are insurmountable.</p>
                     </div>
                 </div>
 
@@ -582,19 +637,19 @@
 
                 <div class="stats-row">
                     <div class="stat">
-                        <div class="stat-value">$5-6B</div>
+                        <div class="stat-value">$5-6B<a href="#ref-5" class="cite">[5]</a></div>
                         <div class="stat-label">2025 Market Size</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-value">$15-20B</div>
+                        <div class="stat-value">$15-20B<a href="#ref-6" class="cite">[6]</a></div>
                         <div class="stat-label">2030 Projection</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-value">25%+</div>
+                        <div class="stat-value">25%+<a href="#ref-7" class="cite">[7]</a></div>
                         <div class="stat-label">CAGR</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-value">76%</div>
+                        <div class="stat-value">76%<a href="#ref-8" class="cite">[8]</a></div>
                         <div class="stat-label">Hyperscaler Share</div>
                     </div>
                 </div>
@@ -612,14 +667,14 @@
                     <tbody>
                         <tr>
                             <td>Direct-to-Chip Cooling</td>
-                            <td>42.85%</td>
+                            <td>42.85%<a href="#ref-8" class="cite">[8]</a></td>
                             <td>22%+ CAGR</td>
                             <td>Largest segment, driven by AI demand</td>
                         </tr>
                         <tr>
                             <td>Immersion Cooling</td>
                             <td>~25%</td>
-                            <td>26.62% CAGR</td>
+                            <td>26.62% CAGR<a href="#ref-7" class="cite">[7]</a></td>
                             <td>Fastest growing segment</td>
                         </tr>
                         <tr>
@@ -639,10 +694,10 @@
 
                 <h3>Primary Market Drivers</h3>
                 <ul>
-                    <li><strong>AI GPU Thermal Density:</strong> NVIDIA Blackwell chips operate at 1,200-2,700W, exceeding air cooling capabilities</li>
-                    <li><strong>Hyperscaler Capital Expenditure:</strong> Combined spending by major cloud providers exceeds $600B in 2026, with approximately 75% allocated to AI infrastructure</li>
-                    <li><strong>Sustainability Requirements:</strong> EU efficiency regulations and corporate water reduction commitments</li>
-                    <li><strong>Air Cooling Physical Limits:</strong> Maximum practical capacity of ~40kW per rack; AI clusters require 120kW+</li>
+                    <li><strong>AI GPU Thermal Density:</strong> NVIDIA Blackwell chips operate at 1,200-2,700W, exceeding air cooling capabilities<a href="#ref-9" class="cite">[9]</a></li>
+                    <li><strong>Hyperscaler Capital Expenditure:</strong> Combined spending by major cloud providers exceeds $600B in 2026, with approximately 75% allocated to AI infrastructure<a href="#ref-10" class="cite">[10]</a></li>
+                    <li><strong>Sustainability Requirements:</strong> EU efficiency regulations and corporate water reduction commitments<a href="#ref-11" class="cite">[11]</a></li>
+                    <li><strong>Air Cooling Physical Limits:</strong> Maximum practical capacity of ~40kW per rack; AI clusters require 120kW+<a href="#ref-1" class="cite">[1]</a></li>
                 </ul>
             </section>
 
@@ -654,28 +709,28 @@
 
                 <h3>Technical Foundation</h3>
                 <ul>
-                    <li>Heat transfer coefficients of 10,000-23,200 W/m²K (50-100x improvement over air cooling)</li>
-                    <li>Capable of managing rack densities of 150-500kW (compared to ~40kW ceiling for air cooling)</li>
-                    <li>NVIDIA GB200 NVL72 systems at 120kW continuous load require liquid cooling by specification</li>
-                    <li>Vertiv currently holds greater than 70% market share for GB200 rack cooling systems</li>
+                    <li>Heat transfer coefficients of 10,000-23,200 W/m&sup2;K (50-100x improvement over air cooling)<a href="#ref-12" class="cite">[12]</a><a href="#ref-13" class="cite">[13]</a></li>
+                    <li>Capable of managing rack densities of 150-500kW (compared to ~40kW ceiling for air cooling)<a href="#ref-1" class="cite">[1]</a></li>
+                    <li>NVIDIA GB200 NVL72 systems at 120kW continuous load require liquid cooling by specification<a href="#ref-14" class="cite">[14]</a></li>
+                    <li>Vertiv currently holds greater than 70% market share for GB200 rack cooling systems<a href="#ref-15" class="cite">[15]</a></li>
                 </ul>
 
                 <div class="two-col">
                     <div class="col-box green">
                         <h4>Bull Case</h4>
                         <ul>
-                            <li>Physics advantage through latent heat transfer is permanent</li>
-                            <li>Active deployment by Meta, Microsoft, Google, and AWS</li>
-                            <li>41% CAPEX savings versus air cooling for 10MW facilities</li>
-                            <li>35% OpEx savings versus single-phase liquid alternatives</li>
-                            <li>Non-PFAS alternatives (HFO refrigerants) address regulatory concerns</li>
+                            <li>Physics advantage through latent heat transfer is permanent<a href="#ref-16" class="cite">[16]</a></li>
+                            <li>Active deployment by Meta, Microsoft, Google, and AWS<a href="#ref-2" class="cite">[2]</a></li>
+                            <li>41% CAPEX savings versus air cooling for 10MW facilities<a href="#ref-17" class="cite">[17]</a></li>
+                            <li>35% OpEx savings versus single-phase liquid alternatives<a href="#ref-18" class="cite">[18]</a></li>
+                            <li>Non-PFAS alternatives (HFO refrigerants) address regulatory concerns<a href="#ref-19" class="cite">[19]</a></li>
                         </ul>
                     </div>
                     <div class="col-box red">
                         <h4>Bear Case</h4>
                         <ul>
-                            <li>PFAS regulatory risk for fluorocarbon-based fluids</li>
-                            <li>Single-phase microchannel technology closing performance gap</li>
+                            <li>PFAS regulatory risk for fluorocarbon-based fluids<a href="#ref-20" class="cite">[20]</a></li>
+                            <li>Single-phase microchannel technology closing performance gap<a href="#ref-21" class="cite">[21]</a></li>
                             <li>Higher operational complexity versus single-phase systems</li>
                             <li>Supply chain concentration presents vendor risk</li>
                             <li>May remain specialized rather than achieving true dominance</li>
@@ -716,13 +771,13 @@
             <section id="thesis-b">
                 <h2>Thesis B: High Ambient Temperature Tolerance</h2>
 
-                <p class="lead">High ambient temperature tolerance (35-45°C+) represents an economically rational approach to data center cooling, enabling reduction or elimination of mechanical cooling through operational optimization.</p>
+                <p class="lead">High ambient temperature tolerance (35-45&deg;C+) represents an economically rational approach to data center cooling, enabling reduction or elimination of mechanical cooling through operational optimization.</p>
 
                 <h3>Critical Assessment</h3>
                 <ul>
-                    <li>ASHRAE H1 class specifications for AI equipment require 18-25°C&mdash;more restrictive, not less</li>
+                    <li>ASHRAE H1 class specifications for AI equipment require 18-25&deg;C&mdash;more restrictive, not less<a href="#ref-22" class="cite">[22]</a></li>
                     <li>This represents an operational practice rather than an investable technology</li>
-                    <li>Leading hyperscalers have already adopted these practices; limited growth opportunity remains</li>
+                    <li>Leading hyperscalers have already adopted these practices; limited growth opportunity remains<a href="#ref-3" class="cite">[3]</a></li>
                     <li>Does not address the fundamental density challenge; liquid cooling remains necessary for 120kW+ racks</li>
                 </ul>
 
@@ -730,17 +785,17 @@
                     <div class="col-box green">
                         <h4>Bull Case</h4>
                         <ul>
-                            <li>Google has operated without chillers since 2008 (Belgium facility)</li>
-                            <li>Meta Prineville operates successfully at 110°F outdoor temperatures</li>
-                            <li>30-50% cooling energy reduction achievable in suitable climates</li>
-                            <li>Free cooling available 90%+ of year in Nordic regions</li>
+                            <li>Google has operated without chillers since 2008 (Belgium facility)<a href="#ref-23" class="cite">[23]</a></li>
+                            <li>Meta Prineville operates successfully at 110&deg;F outdoor temperatures<a href="#ref-24" class="cite">[24]</a></li>
+                            <li>30-50% cooling energy reduction achievable in suitable climates<a href="#ref-25" class="cite">[25]</a></li>
+                            <li>Free cooling available 90%+ of year in Nordic regions<a href="#ref-26" class="cite">[26]</a></li>
                         </ul>
                     </div>
                     <div class="col-box red">
                         <h4>Bear Case</h4>
                         <ul>
-                            <li>AI equipment specifications trend toward cooler requirements (H1 class)</li>
-                            <li>Strategy fails in humid climates (Singapore, Southeast Asia)</li>
+                            <li>AI equipment specifications trend toward cooler requirements (H1 class)<a href="#ref-22" class="cite">[22]</a></li>
+                            <li>Strategy fails in humid climates (Singapore, Southeast Asia)<a href="#ref-27" class="cite">[27]</a></li>
                             <li>Increased fan power consumption partially offsets temperature savings</li>
                             <li>No direct investment thesis&mdash;operational practice only</li>
                         </ul>
@@ -776,15 +831,15 @@
             <section id="thesis-c">
                 <h2>Thesis C: Space-Based Passive Radiative Cooling</h2>
 
-                <p class="lead">Passive radiative cooling to space could theoretically reduce or eliminate active mechanical cooling by exploiting the atmospheric transparency window (8-13 micrometers).</p>
+                <p class="lead">Passive radiative cooling to space could theoretically reduce or eliminate active mechanical cooling by exploiting the atmospheric transparency window (8-13 micrometers).<a href="#ref-28" class="cite">[28]</a></p>
 
                 <h3>Fundamental Limitations</h3>
                 <ul>
-                    <li><strong>Scale mismatch:</strong> Technology delivers approximately 100 W/m² versus data center requirements of 100+ kW per rack (500-5,000x gap)</li>
-                    <li><strong>Land requirements:</strong> A single 100kW rack would require 1,000 m² of radiative panels</li>
-                    <li><strong>Geographic constraints:</strong> Performance degrades significantly in humid climates where major data center markets are located</li>
-                    <li><strong>Physics ceiling:</strong> Approximately 150 W/m² represents the theoretical maximum</li>
-                    <li><strong>Market positioning:</strong> SkyCool Systems operates in building HVAC augmentation, not data center cooling</li>
+                    <li><strong>Scale mismatch:</strong> Technology delivers approximately 100 W/m&sup2; versus data center requirements of 100+ kW per rack (500-5,000x gap)<a href="#ref-4" class="cite">[4]</a><a href="#ref-29" class="cite">[29]</a></li>
+                    <li><strong>Land requirements:</strong> A single 100kW rack would require 1,000 m&sup2; of radiative panels</li>
+                    <li><strong>Geographic constraints:</strong> Performance degrades significantly in humid climates where major data center markets are located<a href="#ref-30" class="cite">[30]</a></li>
+                    <li><strong>Physics ceiling:</strong> Approximately 150 W/m&sup2; represents the theoretical maximum<a href="#ref-31" class="cite">[31]</a></li>
+                    <li><strong>Market positioning:</strong> SkyCool Systems operates in building HVAC augmentation, not data center cooling<a href="#ref-32" class="cite">[32]</a></li>
                 </ul>
 
                 <div class="two-col">
@@ -792,17 +847,17 @@
                         <h4>Bull Case</h4>
                         <ul>
                             <li>Zero electricity and zero water consumption in operation</li>
-                            <li>SkyCool demonstrates 10-40% HVAC efficiency improvements</li>
+                            <li>SkyCool demonstrates 10-40% HVAC efficiency improvements<a href="#ref-32" class="cite">[32]</a></li>
                             <li>Potential application for edge computing supplementation</li>
-                            <li>Orbital computing development driving R&D investment</li>
+                            <li>Orbital computing development driving R&D investment<a href="#ref-33" class="cite">[33]</a></li>
                         </ul>
                     </div>
                     <div class="col-box red">
                         <h4>Bear Case</h4>
                         <ul>
-                            <li>Cannot bridge the 500-5,000x scale gap</li>
+                            <li>Cannot bridge the 500-5,000x scale gap<a href="#ref-4" class="cite">[4]</a></li>
                             <li>Physics limits represent hard constraints, not engineering problems</li>
-                            <li>Hong Kong field tests showed no daytime cooling effect</li>
+                            <li>Hong Kong field tests showed no daytime cooling effect<a href="#ref-30" class="cite">[30]</a></li>
                             <li>Liquid cooling has already solved the core problem</li>
                         </ul>
                     </div>
@@ -857,32 +912,33 @@
                         <tr>
                             <td>Hopper (H100)</td>
                             <td>2022</td>
-                            <td>700W</td>
+                            <td>700W<a href="#ref-34" class="cite">[34]</a></td>
                             <td>Air or liquid</td>
                         </tr>
                         <tr>
                             <td>Blackwell (B200)</td>
                             <td>2024</td>
-                            <td>1,200W</td>
+                            <td>1,200W<a href="#ref-9" class="cite">[9]</a></td>
                             <td>Liquid mandatory</td>
                         </tr>
                         <tr>
                             <td>Rubin (R100)</td>
                             <td>2026</td>
-                            <td>2,000-2,300W</td>
+                            <td>2,000-2,300W<a href="#ref-35" class="cite">[35]</a></td>
                             <td>Advanced liquid</td>
                         </tr>
                         <tr>
                             <td><strong>Feynman</strong></td>
                             <td><strong>2028</strong></td>
-                            <td><strong>4,400-6,000W</strong></td>
+                            <td><strong>4,400-6,000W</strong><a href="#ref-36" class="cite">[36]</a><a href="#ref-37" class="cite">[37]</a></td>
                             <td><strong>Embedded/microfluidic</strong></td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div class="insight-box">
-                    <strong>Key Insight:</strong> Feynman introduces 3D logic die stacking&mdash;multiple GPU dies stacked on top of each other. This isn't just higher TDP; it's a fundamental thermal architecture challenge that traditional cold plates cannot solve.
+                <div class="callout">
+                    <h4>Key Insight</h4>
+                    <p>Feynman introduces 3D logic die stacking&mdash;multiple GPU dies stacked on top of each other.<a href="#ref-38" class="cite">[38]</a> This isn't just higher TDP; it's a fundamental thermal architecture challenge that traditional cold plates cannot solve.</p>
                 </div>
 
                 <h3>Modality Comparison</h3>
@@ -898,13 +954,13 @@
                     <tbody>
                         <tr>
                             <td>Single-Phase D2C</td>
-                            <td>~1,500-2,000W</td>
+                            <td>~1,500-2,000W<a href="#ref-39" class="cite">[39]</a></td>
                             <td style="color: #dc2626;">NOT VIABLE</td>
                             <td>CoolIT, Asetek, Vertiv</td>
                         </tr>
                         <tr>
                             <td>Two-Phase D2C</td>
-                            <td>~3,000-4,000W</td>
+                            <td>~3,000-4,000W<a href="#ref-39" class="cite">[39]</a></td>
                             <td style="color: #d97706;">MARGINAL</td>
                             <td>ZutaCore, Accelsius</td>
                         </tr>
@@ -916,7 +972,7 @@
                         </tr>
                         <tr>
                             <td>Immersion (Two-Phase)</td>
-                            <td>~250kW/tank</td>
+                            <td>~250kW/tank<a href="#ref-40" class="cite">[40]</a></td>
                             <td style="color: #d97706;">POSSIBLE</td>
                             <td>LiquidStack (Trane)</td>
                         </tr>
@@ -930,10 +986,10 @@
                 </table>
 
                 <h3>The Breakthrough: TSMC Direct-to-Silicon Cooling</h3>
-                <p>TSMC demonstrated direct-to-silicon liquid cooling at ECTC 2025, with micropillar arrays etched directly into the silicon backside. This achieves:</p>
+                <p>TSMC demonstrated direct-to-silicon liquid cooling at ECTC 2025, with micropillar arrays etched directly into the silicon backside.<a href="#ref-41" class="cite">[41]</a> This achieves:</p>
                 <ul>
                     <li><strong>Zero TIM:</strong> Coolant contacts silicon directly (no thermal interface material)</li>
-                    <li><strong>0.055 &deg;C/W thermal resistance</strong>&mdash;15% better than lidded solutions</li>
+                    <li><strong>0.055 &deg;C/W thermal resistance</strong>&mdash;15% better than lidded solutions<a href="#ref-41" class="cite">[41]</a></li>
                     <li><strong>2.6kW+ demonstrated</strong> with temperature delta under 63&deg;C</li>
                     <li><strong>Backside cooling</strong>&mdash;essential for 3D-stacked Feynman architecture</li>
                 </ul>
@@ -974,19 +1030,20 @@
                         </tr>
                         <tr>
                             <td>Two-phase D2C</td>
-                            <td><strong>Rising fast</strong></td>
+                            <td><strong>Rising fast</strong><a href="#ref-39" class="cite">[39]</a></td>
                             <td>Stable (mid-density)</td>
                         </tr>
                         <tr>
                             <td>Embedded/Microfluidic</td>
-                            <td>Emerging</td>
+                            <td>Emerging<a href="#ref-42" class="cite">[42]</a></td>
                             <td><strong>Dominant for high-end</strong></td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div class="insight-box">
-                    <strong>Watch Signals:</strong> TSMC IMC-Si commercialization timeline, Microsoft microfluidics production deployment, Rubin cooling specs, JetCool-TSMC partnership announcements, ZutaCore/Accelsius non-PFAS fluid launch (2026 commitment).
+                <div class="callout">
+                    <h4>Watch Signals</h4>
+                    <p>TSMC IMC-Si commercialization timeline, Microsoft microfluidics production deployment<a href="#ref-42" class="cite">[42]</a>, Rubin cooling specs, JetCool-TSMC partnership announcements, ZutaCore/Accelsius non-PFAS fluid launch (2026 commitment).<a href="#ref-19" class="cite">[19]</a></p>
                 </div>
             </section>
 
@@ -999,27 +1056,27 @@
                     <div class="company-card">
                         <h4>ZutaCore</h4>
                         <div class="company-meta">Israel &middot; Founded 2016 &middot; HyperCool Technology</div>
-                        <span class="funding-tag">$96M Raised</span>
+                        <span class="funding-tag">$96M Raised<a href="#ref-43" class="cite" style="color:#fff">[43]</a></span>
                         <p>Two-phase direct-to-chip cooling. Key investors include Carrier, Mitsubishi Heavy Industries, and Wiwynn. Products support 240kW+ per rack configurations.</p>
                     </div>
 
                     <div class="company-card">
                         <h4>Accelsius</h4>
                         <div class="company-meta">Texas &middot; Founded 2022 &middot; NeuCool (Bell Labs origin)</div>
-                        <span class="funding-tag">$107M Raised</span>
+                        <span class="funding-tag">$107M Raised<a href="#ref-44" class="cite" style="color:#fff">[44]</a></span>
                         <p>Two-phase direct-to-chip, 150kW per rack capacity. Strategic backing from Johnson Controls and Legrand. DarkNX 300MW deployment announced.</p>
                     </div>
 
                     <div class="company-card">
                         <h4>LiquidStack</h4>
-                        <div class="company-meta">Acquired by Trane Technologies &middot; February 2026</div>
+                        <div class="company-meta">Acquired by Trane Technologies &middot; February 2026<a href="#ref-45" class="cite">[45]</a></div>
                         <span class="funding-tag">Acquired</span>
                         <p>Two-phase immersion cooling pioneer. Microsoft Quincy deployment. Tank systems rated to 252kW capacity.</p>
                     </div>
 
                     <div class="company-card">
                         <h4>JetCool Technologies</h4>
-                        <div class="company-meta">Acquired by Flex &middot; November 2024</div>
+                        <div class="company-meta">Acquired by Flex &middot; November 2024<a href="#ref-46" class="cite">[46]</a></div>
                         <span class="funding-tag">Acquired</span>
                         <p>MIT Lincoln Lab spinout. Microconvective cooling using fluid jets. Active collaboration with Broadcom on next-generation AI XPUs.</p>
                     </div>
@@ -1039,20 +1096,20 @@
                         <tr>
                             <td>Eaton Corporation</td>
                             <td>Boyd Thermal</td>
-                            <td>$9.5 billion</td>
+                            <td>$9.5 billion<a href="#ref-47" class="cite">[47]</a></td>
                             <td>2025</td>
                         </tr>
                         <tr>
                             <td>Trane Technologies</td>
                             <td>LiquidStack</td>
                             <td>Undisclosed</td>
-                            <td>February 2026</td>
+                            <td>February 2026<a href="#ref-45" class="cite">[45]</a></td>
                         </tr>
                         <tr>
                             <td>Flex Ltd</td>
                             <td>JetCool Technologies</td>
                             <td>Undisclosed</td>
-                            <td>November 2024</td>
+                            <td>November 2024<a href="#ref-46" class="cite">[46]</a></td>
                         </tr>
                         <tr>
                             <td>Schneider Electric</td>
@@ -1082,31 +1139,31 @@
                         <tr>
                             <td>Vertiv Holdings</td>
                             <td>VRT</td>
-                            <td>Greater than 70% GB200 market share; liquid cooling category leader</td>
+                            <td>Greater than 70% GB200 market share<a href="#ref-15" class="cite">[15]</a>; liquid cooling category leader</td>
                             <td>High</td>
                         </tr>
                         <tr>
                             <td>Eaton Corporation</td>
                             <td>ETN</td>
-                            <td>Boyd acquisition provides comprehensive thermal management portfolio</td>
+                            <td>Boyd acquisition provides comprehensive thermal management portfolio<a href="#ref-47" class="cite">[47]</a></td>
                             <td>High</td>
                         </tr>
                         <tr>
                             <td>Flex Ltd</td>
                             <td>FLEX</td>
-                            <td>JetCool acquisition enables vertical integration strategy</td>
+                            <td>JetCool acquisition enables vertical integration strategy<a href="#ref-46" class="cite">[46]</a></td>
                             <td>High</td>
                         </tr>
                         <tr>
                             <td>Trane Technologies</td>
                             <td>TT</td>
-                            <td>LiquidStack acquisition provides two-phase immersion capability</td>
+                            <td>LiquidStack acquisition provides two-phase immersion capability<a href="#ref-45" class="cite">[45]</a></td>
                             <td>Moderate</td>
                         </tr>
                         <tr>
                             <td>Innventure Inc</td>
                             <td>INV</td>
-                            <td>Parent company of Accelsius</td>
+                            <td>Parent company of Accelsius<a href="#ref-44" class="cite">[44]</a></td>
                             <td>Moderate</td>
                         </tr>
                     </tbody>
@@ -1182,7 +1239,7 @@
 
                 <div class="summary-box" style="border-left-color: #dc2626;">
                     <h4>Assessment for New Entrants</h4>
-                    <p>Should you start a liquid cooling company in 2026? <strong>Likely not</strong>, unless you possess a specific unfair advantage. The market is consolidating, category leaders are established, and strategic acquirers are actively purchasing startups at compressed multiples.</p>
+                    <p>Should you start a liquid cooling company in 2026? <strong>Likely not</strong>, unless you possess a specific unfair advantage. The market is consolidating, category leaders are established<a href="#ref-15" class="cite">[15]</a>, and strategic acquirers are actively purchasing startups at compressed multiples.<a href="#ref-47" class="cite">[47]</a></p>
                 </div>
 
                 <h3>Market Entry Challenges</h3>
@@ -1195,7 +1252,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Vertiv holds 70%+ GB200 market share</td>
+                            <td>Vertiv holds 70%+ GB200 market share<a href="#ref-15" class="cite">[15]</a></td>
                             <td>Hyperscalers have established vendor relationships</td>
                         </tr>
                         <tr>
@@ -1203,7 +1260,7 @@
                             <td>Strategic consolidation reduces exit options and valuations</td>
                         </tr>
                         <tr>
-                            <td>18-24 month qualification cycles</td>
+                            <td>18-24 month qualification cycles<a href="#ref-48" class="cite">[48]</a></td>
                             <td>Extended sales cycles require significant runway</td>
                         </tr>
                         <tr>
@@ -1226,7 +1283,7 @@
                             <div class="opportunity-tier">Tier 1 &middot; Defensible</div>
                         </div>
                         <div class="opportunity-desc">
-                            <p>Two-phase cooling faces PFAS regulatory risk. Developer of a compliant drop-in replacement fluid captures significant value. Requires chemistry moat and benefits from regulatory tailwind.</p>
+                            <p>Two-phase cooling faces PFAS regulatory risk.<a href="#ref-20" class="cite">[20]</a> Developer of a compliant drop-in replacement fluid captures significant value. Requires chemistry moat and benefits from regulatory tailwind.</p>
                             <p><strong>Target founders:</strong> Chemistry PhDs, spinouts from Honeywell or Chemours</p>
                         </div>
                     </div>
@@ -1279,7 +1336,7 @@
                             <div class="opportunity-tier">Avoid</div>
                         </div>
                         <div class="opportunity-desc">
-                            <p>Vertiv, CoolIT, and Motivair have established dominant positions. Hyperscalers will not switch vendors for marginal improvements. Manufacturing scale economics favor incumbents. "Better engineering" is not sufficient differentiation.</p>
+                            <p>Vertiv, CoolIT, and Motivair have established dominant positions.<a href="#ref-15" class="cite">[15]</a> Hyperscalers will not switch vendors for marginal improvements. Manufacturing scale economics favor incumbents. "Better engineering" is not sufficient differentiation.</p>
                         </div>
                     </div>
                 </div>
@@ -1316,7 +1373,7 @@
                         </tr>
                         <tr>
                             <td>Production</td>
-                            <td>Months 18-24</td>
+                            <td>Months 18-24<a href="#ref-48" class="cite">[48]</a></td>
                             <td>Initial production order</td>
                         </tr>
                     </tbody>
@@ -1391,85 +1448,95 @@
                 </div>
             </section>
 
-            <!-- Sources -->
-            <section id="sources">
-                <h2>Sources &amp; References</h2>
+            <!-- References -->
+            <section id="references">
+                <h2>References</h2>
 
-                <p>This research draws on 150+ primary sources. Key references are organized below by category. Full citations are available in the underlying research documents.</p>
+                <div class="references">
+                    <p class="ref-category">Market Research &amp; Sizing</p>
+                    <ol start="1">
+                        <li id="ref-1">Network World. "Why AI rack densities make liquid cooling non-negotiable." <a href="https://www.networkworld.com/article/4149069/why-ai-rack-densities-make-liquid-cooling-nonnegotiable.html" target="_blank">networkworld.com</a></li>
+                        <li id="ref-2">DataCenters.com. "Why liquid cooling is becoming the new standard in hyperscale facilities." <a href="https://www.datacenters.com/news/why-liquid-cooling-is-becoming-the-new-standard-in-hyperscale-facilities" target="_blank">datacenters.com</a></li>
+                        <li id="ref-3">Data Center Knowledge. "Hyperscalers in 2026: What's next for the world's largest data center operators." <a href="https://www.datacenterknowledge.com/hyperscalers/hyperscalers-in-2026-what-s-next-for-the-world-s-largest-data-center-operators-" target="_blank">datacenterknowledge.com</a></li>
+                        <li id="ref-4">Stanford Engineering. "How a new cooling system works without electricity." <a href="https://engineering.stanford.edu/news/how-new-cooling-system-works-without-using-any-electricity" target="_blank">stanford.edu</a></li>
+                        <li id="ref-5">Grand View Research. "Data Center Liquid Cooling Market Report." <a href="https://www.grandviewresearch.com/industry-analysis/data-center-liquid-cooling-market-report" target="_blank">grandviewresearch.com</a></li>
+                        <li id="ref-6">MarkNtel Advisors. "Data Center Liquid Cooling Market Analysis 2030." <a href="https://www.marketsandmarkets.com/Market-Reports/data-center-liquid-cooling-market-84374345.html" target="_blank">marketsandmarkets.com</a></li>
+                        <li id="ref-7">Mordor Intelligence. "Data Center Liquid Cooling Market." <a href="https://www.mordorintelligence.com/industry-reports/data-center-liquid-cooling-market" target="_blank">mordorintelligence.com</a></li>
+                        <li id="ref-8">Global Market Insights. "Data Center Liquid Cooling Market." <a href="https://www.gminsights.com/industry-analysis/data-center-liquid-cooling-market" target="_blank">gminsights.com</a></li>
+                    </ol>
 
-                <h3>Market Research &amp; Sizing</h3>
-                <ul>
-                    <li><a href="https://www.grandviewresearch.com/industry-analysis/data-center-liquid-cooling-market-report" target="_blank">Grand View Research - Data Center Liquid Cooling Market</a></li>
-                    <li><a href="https://www.mordorintelligence.com/industry-reports/data-center-liquid-cooling-market" target="_blank">Mordor Intelligence - Data Center Liquid Cooling Market</a></li>
-                    <li><a href="https://www.marketsandmarkets.com/Market-Reports/data-center-liquid-cooling-market-84374345.html" target="_blank">MarketsandMarkets - Liquid Cooling Market</a></li>
-                    <li><a href="https://www.gminsights.com/industry-analysis/data-center-liquid-cooling-market" target="_blank">Global Market Insights - Data Center Liquid Cooling</a></li>
-                    <li><a href="https://www.fortunebusinessinsights.com/two-phase-data-center-liquid-immersion-cooling-market-113122" target="_blank">Fortune Business Insights - Two-Phase Immersion Cooling</a></li>
-                </ul>
+                    <p class="ref-category">GPU Architecture &amp; Power Requirements</p>
+                    <ol start="9">
+                        <li id="ref-9">Canopy Wave. "NVIDIA H100 vs H200 vs B200: Which GPU for your workload." <a href="https://canopywave.com/tutorials/nvidia-h100-vs-h200-vs-b200:-which-gpu-for-your-workload" target="_blank">canopywave.com</a></li>
+                        <li id="ref-10">IEEE ComSoc. "Hyperscaler CapEx $600B in 2026." <a href="https://techblog.comsoc.org/2025/12/22/hyperscaler-capex-600-bn-in-2026-a-36-increase-over-2025-while-global-spending-on-cloud-infrastructure-services-skyrockets/" target="_blank">comsoc.org</a></li>
+                        <li id="ref-11">Data Center Frontier. "Microsoft aims to slash data center water usage by 95%." <a href="https://www.datacenterfrontier.com/cloud/article/11427859/microsoft-aims-to-slash-data-center-water-usage-by-95-percent-in-3-years" target="_blank">datacenterfrontier.com</a></li>
+                    </ol>
 
-                <h3>Company &amp; Startup Data</h3>
-                <ul>
-                    <li><a href="https://tracxn.com/d/companies/zutacore" target="_blank">Tracxn - ZutaCore Profile</a></li>
-                    <li><a href="https://tracxn.com/d/companies/accelsius" target="_blank">Tracxn - Accelsius Profile</a></li>
-                    <li><a href="https://tracxn.com/d/companies/liquidstack" target="_blank">Tracxn - LiquidStack Profile</a></li>
-                    <li><a href="https://tracxn.com/d/companies/jetcool-technologies" target="_blank">Tracxn - JetCool Technologies Profile</a></li>
-                </ul>
+                    <p class="ref-category">Two-Phase Cooling Technology</p>
+                    <ol start="12">
+                        <li id="ref-12">NADDOD. "Single-phase vs two-phase immersion cooling in data centers." <a href="https://www.naddod.com/blog/single-phase-vs-two-phase-immersion-cooling-in-data-centers" target="_blank">naddod.com</a></li>
+                        <li id="ref-13">Accelsius. "A Practical Metric for Cold Plate Thermal Performance." <a href="https://accelsius.com/wp-content/uploads/A-Practical-Metric-for-Cold-Plate-Thermal-Performance-in-Two-Phase-Direct-to-Chip-Cooling.pdf" target="_blank">accelsius.com [PDF]</a></li>
+                        <li id="ref-14">NVIDIA. "GB200 NVL72 Specifications." <a href="https://www.nvidia.com/en-us/data-center/gb200-nvl72/" target="_blank">nvidia.com</a></li>
+                        <li id="ref-15">EnkiAI. "Vertiv liquid cooling dominating AI data centers in 2025." <a href="https://enkiai.com/data-center/vertiv-liquid-cooling-dominating-ai-data-centers-in-2025" target="_blank">enkiai.com</a></li>
+                        <li id="ref-16">Chatsworth Products. "What is two-phase direct-to-chip liquid cooling." <a href="https://www.chatsworth.com/en-us/resources/blogs/2024/what-is-two-phase-direct-to-chip-liquid-cooling" target="_blank">chatsworth.com</a></li>
+                        <li id="ref-17">Profile IT. "Understanding TCO for a 10MW AI data center." <a href="https://www.profileits.com/understanding-the-total-cost-of-ownership-tco-for-a-10-mw-ai-data-center-air-cooling-vs-immersion-cooling/" target="_blank">profileits.com</a></li>
+                        <li id="ref-18">Accelsius. "Why two-phase is the winning choice vs single-phase." <a href="https://accelsius.com/why-two-phase-is-the-winning-choice-vs-single-phase/" target="_blank">accelsius.com</a></li>
+                        <li id="ref-19">C&amp;EN. "Data centers take the plunge." <a href="https://cen.acs.org/business/Data-centers-take-plunge/103/web/2025/08" target="_blank">cen.acs.org</a></li>
+                        <li id="ref-20">Data Center Dynamics. "Two-phase cooling will be hit by EPA rules and 3M's exit from PFAS." <a href="https://www.datacenterdynamics.com/en/news/two-phase-cooling-will-be-hit-by-epa-rules-and-3ms-exit-from-pfas-forever-chemicals/" target="_blank">datacenterdynamics.com</a></li>
+                        <li id="ref-21">JetCool. "Microconvective liquid cooling technology." <a href="https://jetcool.com/technology/" target="_blank">jetcool.com</a></li>
+                    </ol>
 
-                <h3>Technical Standards &amp; Guidelines</h3>
-                <ul>
-                    <li><a href="https://www.ashrae.org/file%20library/technical%20resources/bookstore/supplemental%20files/therm-gdlns-5th-r-e-refcard.pdf" target="_blank">ASHRAE TC 9.9 Thermal Guidelines Reference Card</a></li>
-                    <li><a href="https://attom.tech/ashraes-new-thermal-guideline-update-a-new-high-density-trend/" target="_blank">ASHRAE H1 Class - High Density Thermal Guidelines</a></li>
-                    <li><a href="https://www.opencompute.org/documents/2p-refrigerant-based-dlc-wp-v1-pdf-1" target="_blank">OCP - Two-Phase Refrigerant-Based DLC White Paper</a></li>
-                </ul>
+                    <p class="ref-category">High Ambient Temperature &amp; Free Cooling</p>
+                    <ol start="22">
+                        <li id="ref-22">Attom Tech. "ASHRAE's new thermal guideline update: A new high-density trend." <a href="https://attom.tech/ashraes-new-thermal-guideline-update-a-new-high-density-trend/" target="_blank">attom.tech</a></li>
+                        <li id="ref-23">Data Center Knowledge. "Google's chiller-less data center." <a href="https://www.datacenterknowledge.com/hyperscalers/google-s-chiller-less-data-center/" target="_blank">datacenterknowledge.com</a></li>
+                        <li id="ref-24">Engineering at Meta. "Designing a very efficient data center." <a href="https://engineering.fb.com/2011/04/14/core-infra/designing-a-very-efficient-data-center/" target="_blank">engineering.fb.com</a></li>
+                        <li id="ref-25">Energy Star. "Use air-side economizer." <a href="https://www.energystar.gov/products/data_center_equipment/16-more-ways-cut-energy-waste-data-center/use-air-side-economizer" target="_blank">energystar.gov</a></li>
+                        <li id="ref-26">atNorth. "Why Nordics for data centers." <a href="https://www.atnorth.com/about-atnorth/why-nordics/" target="_blank">atnorth.com</a></li>
+                        <li id="ref-27">Data Center Dynamics. "Hottest and coolest data center locations." <a href="https://www.datacenterdynamics.com/en/analysis/hottest-and-coolest-data-center-locations/" target="_blank">datacenterdynamics.com</a></li>
+                    </ol>
 
-                <h3>NVIDIA &amp; GPU Architecture</h3>
-                <ul>
-                    <li><a href="https://www.tomshardware.com/tech-industry/semiconductors/nvidia-enterprise-roadmap-rubin-rubin-ultra-feynman-and-silicon-photonics" target="_blank">Tom's Hardware - NVIDIA Enterprise GPU Roadmap</a></li>
-                    <li><a href="https://www.igorslab.de/en/starting-in-2028-nvidia-will-apparently-stack-true-logic-dies-in-feynman-for-the-first-time-turning-25d-into-a-thermal-tightrope-walk/" target="_blank">Igor's Lab - Feynman 3D Stacking Thermal Challenge</a></li>
-                    <li><a href="https://www.tomshardware.com/pc-components/cooling/future-ai-processors-said-to-consume-up-to-15-360w-massive-power-draw-will-demand-exotic-immersion-and-embedded-cooling-tech" target="_blank">Tom's Hardware - Future AI Processors Power Requirements</a></li>
-                    <li><a href="https://www.nvidia.com/content/dam/en-zz/Solutions/gtcs22/data-center/h100/PB-11133-001_v01.pdf" target="_blank">NVIDIA H100 Thermal Specifications</a></li>
-                </ul>
+                    <p class="ref-category">Radiative Cooling</p>
+                    <ol start="28">
+                        <li id="ref-28">PMC. "Radiative cooling principles and mechanisms." <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5067572/" target="_blank">pmc.ncbi.nlm.nih.gov</a></li>
+                        <li id="ref-29">ScienceDirect. "Passive daytime radiative cooling." <a href="https://www.sciencedirect.com/science/article/pii/S2949821X24000267" target="_blank">sciencedirect.com</a></li>
+                        <li id="ref-30">ScienceDirect. "Humidity effects on radiative cooling." <a href="https://www.sciencedirect.com/science/article/abs/pii/S0017931021015362" target="_blank">sciencedirect.com</a></li>
+                        <li id="ref-31">MDPI. "Global radiative cooling potential." <a href="https://www.mdpi.com/2073-4433/12/11/1379" target="_blank">mdpi.com</a></li>
+                        <li id="ref-32">SkyCool Systems. <a href="https://www.skycoolsystems.com/" target="_blank">skycoolsystems.com</a></li>
+                        <li id="ref-33">SatNews. "The physics wall: Orbiting data centers face massive cooling challenge." <a href="https://satnews.com/2026/03/17/the-physics-wall-orbiting-data-centers-face-a-massive-cooling-challenge/" target="_blank">satnews.com</a></li>
+                    </ol>
 
-                <h3>Cooling Technology Research</h3>
-                <ul>
-                    <li><a href="https://www.idtechex.com/en/research-article/two-phase-cold-plate-cooling-will-take-off-as-early-as-2026-2027/34068" target="_blank">IDTechEx - Two-Phase Cold Plate Cooling Forecast</a></li>
-                    <li><a href="https://www.idtechex.com/en/research-article/two-phase-liquid-cooling-the-future-of-high-end-gpus/33862" target="_blank">IDTechEx - Two-Phase Liquid Cooling for GPUs</a></li>
-                    <li><a href="https://semiwiki.com/semiconductor-manufacturers/362017-breaking-the-thermal-wall-tsmc-demonstrates-direct-to-silicon-liquid-cooling-on-cowos/" target="_blank">SemiWiki - TSMC Direct-to-Silicon Liquid Cooling</a></li>
-                    <li><a href="https://news.microsoft.com/source/features/innovation/microfluidics-liquid-cooling-ai-chips/" target="_blank">Microsoft - Microfluidics Liquid Cooling Breakthrough</a></li>
-                    <li><a href="https://www.tomshardware.com/pc-components/cooling/the-data-center-cooling-state-of-play-2025-liquid-cooling-is-on-the-rise-thermal-density-demands-skyrocket-in-ai-data-centers-and-tsmc-leads-with-direct-to-silicon-solutions" target="_blank">Tom's Hardware - Data Center Cooling State of Play 2025</a></li>
-                </ul>
+                    <p class="ref-category">NVIDIA Architecture Roadmap</p>
+                    <ol start="34">
+                        <li id="ref-34">NVIDIA. "H100 Tensor Core GPU Datasheet." <a href="https://www.nvidia.com/content/dam/en-zz/Solutions/gtcs22/data-center/h100/PB-11133-001_v01.pdf" target="_blank">nvidia.com [PDF]</a></li>
+                        <li id="ref-35">Tom's Hardware. "Data center cooling state of play 2025." <a href="https://www.tomshardware.com/pc-components/cooling/the-data-center-cooling-state-of-play-2025-liquid-cooling-is-on-the-rise-thermal-density-demands-skyrocket-in-ai-data-centers-and-tsmc-leads-with-direct-to-silicon-solutions" target="_blank">tomshardware.com</a></li>
+                        <li id="ref-36">Tom's Hardware. "NVIDIA Enterprise GPU Roadmap: Rubin, Feynman." <a href="https://www.tomshardware.com/tech-industry/semiconductors/nvidia-enterprise-roadmap-rubin-rubin-ultra-feynman-and-silicon-photonics" target="_blank">tomshardware.com</a></li>
+                        <li id="ref-37">Tom's Hardware. "Future AI processors to consume up to 15,360W." <a href="https://www.tomshardware.com/pc-components/cooling/future-ai-processors-said-to-consume-up-to-15-360w-massive-power-draw-will-demand-exotic-immersion-and-embedded-cooling-tech" target="_blank">tomshardware.com</a></li>
+                        <li id="ref-38">Igor's Lab. "Feynman will stack true logic dies for the first time." <a href="https://www.igorslab.de/en/starting-in-2028-nvidia-will-apparently-stack-true-logic-dies-in-feynman-for-the-first-time-turning-25d-into-a-thermal-tightrope-walk/" target="_blank">igorslab.de</a></li>
+                    </ol>
 
-                <h3>Hyperscaler Practices</h3>
-                <ul>
-                    <li><a href="https://www.datacenterknowledge.com/hyperscalers/google-s-chiller-less-data-center/" target="_blank">Data Center Knowledge - Google Chiller-less Data Center</a></li>
-                    <li><a href="https://engineering.fb.com/2011/04/14/core-infra/designing-a-very-efficient-data-center/" target="_blank">Engineering at Meta - Prineville Data Center Design</a></li>
-                    <li><a href="https://www.datacenterfrontier.com/cloud/article/11427859/microsoft-aims-to-slash-data-center-water-usage-by-95-percent-in-3-years" target="_blank">Data Center Frontier - Microsoft Water Reduction</a></li>
-                    <li><a href="https://www.datacenterfrontier.com/design/article/55247074/aws-unveils-ai-data-center-designs-supporting-6x-increase-in-density" target="_blank">Data Center Frontier - AWS AI Data Center Designs</a></li>
-                </ul>
+                    <p class="ref-category">Cooling Modality Comparison</p>
+                    <ol start="39">
+                        <li id="ref-39">IDTechEx. "Two-phase cold plate cooling will take off as early as 2026-2027." <a href="https://www.idtechex.com/en/research-article/two-phase-cold-plate-cooling-will-take-off-as-early-as-2026-2027/34068" target="_blank">idtechex.com</a></li>
+                        <li id="ref-40">Tracxn. "LiquidStack company profile." <a href="https://tracxn.com/d/companies/liquidstack" target="_blank">tracxn.com</a></li>
+                        <li id="ref-41">SemiWiki. "Breaking the thermal wall: TSMC demonstrates direct-to-silicon liquid cooling." <a href="https://semiwiki.com/semiconductor-manufacturers/362017-breaking-the-thermal-wall-tsmc-demonstrates-direct-to-silicon-liquid-cooling-on-cowos/" target="_blank">semiwiki.com</a></li>
+                        <li id="ref-42">Microsoft News. "Microfluidics liquid cooling for AI chips." <a href="https://news.microsoft.com/source/features/innovation/microfluidics-liquid-cooling-ai-chips/" target="_blank">microsoft.com</a></li>
+                    </ol>
 
-                <h3>PFAS &amp; Coolant Regulations</h3>
-                <ul>
-                    <li><a href="https://cen.acs.org/business/Data-centers-take-plunge/103/web/2025/08" target="_blank">C&amp;EN - Data Centers Take the Plunge (PFAS Analysis)</a></li>
-                    <li><a href="https://www.datacenterdynamics.com/en/news/chemours-launches-two-phase-immersion-cooling-fluid/" target="_blank">DCD - Chemours Opteon 2P50 Launch</a></li>
-                    <li><a href="https://accelsius.com/wp-content/uploads/PFAS-Whitepaper-Feb_2024.pdf" target="_blank">Accelsius - PFAS Concerns White Paper</a></li>
-                </ul>
-
-                <h3>Radiative Cooling</h3>
-                <ul>
-                    <li><a href="https://engineering.stanford.edu/news/how-new-cooling-system-works-without-using-any-electricity" target="_blank">Stanford Engineering - Radiative Cooling Systems</a></li>
-                    <li><a href="https://www.skycoolsystems.com/" target="_blank">SkyCool Systems</a></li>
-                    <li><a href="https://satnews.com/2026/03/17/the-physics-wall-orbiting-data-centers-face-a-massive-cooling-challenge/" target="_blank">SatNews - Orbiting Data Centers Cooling Challenge</a></li>
-                </ul>
-
-                <h3>Nordic &amp; Geographic Arbitrage</h3>
-                <ul>
-                    <li><a href="https://www.atnorth.com/nordic-data-centers/iceland-data-centers/" target="_blank">atNorth - Iceland Data Centers</a></li>
-                    <li><a href="https://pexapark.com/blog/prmc-breaking-down-the-data-center-surge-in-the-nordics-key-players-trends-and-ppas/" target="_blank">Pexapark - Nordic Data Center Surge</a></li>
-                    <li><a href="https://www.infrastructureinvestor.com/the-rise-and-rise-of-the-nordic-data-centre-industry/" target="_blank">Infrastructure Investor - Nordic Data Center Industry</a></li>
-                </ul>
+                    <p class="ref-category">Company &amp; M&amp;A Data</p>
+                    <ol start="43">
+                        <li id="ref-43">Tracxn. "ZutaCore company profile." <a href="https://tracxn.com/d/companies/zutacore" target="_blank">tracxn.com</a></li>
+                        <li id="ref-44">Tracxn. "Accelsius company profile." <a href="https://tracxn.com/d/companies/accelsius" target="_blank">tracxn.com</a></li>
+                        <li id="ref-45">Tracxn. "LiquidStack acquisition by Trane Technologies." <a href="https://tracxn.com/d/companies/liquidstack" target="_blank">tracxn.com</a></li>
+                        <li id="ref-46">Tracxn. "JetCool Technologies acquisition by Flex." <a href="https://tracxn.com/d/companies/jetcool-technologies" target="_blank">tracxn.com</a></li>
+                        <li id="ref-47">Data Center Dynamics. "Eaton acquires Boyd Thermal for $9.5B." <a href="https://www.datacenterdynamics.com/en/news/eaton-acquires-boyd-thermal-for-95bn-to-further-liquid-cooling-portfolio/" target="_blank">datacenterdynamics.com</a></li>
+                        <li id="ref-48">Introl. "Liquid cooling mainstream tipping point 2025." <a href="https://introl.com/blog/liquid-cooling-mainstream-tipping-point-2025" target="_blank">introl.com</a></li>
+                    </ol>
+                </div>
 
                 <div class="callout" style="margin-top: 32px;">
                     <h4>Full Research Repository</h4>
-                    <p>Complete research documentation with all citations is available at: <a href="https://github.com/gavinpola/dc-cooling-research" target="_blank">github.com/gavinpola/dc-cooling-research</a></p>
+                    <p>Complete research documentation with all 150+ citations is available at: <a href="https://github.com/gavinpola/dc-cooling-research" target="_blank">github.com/gavinpola/dc-cooling-research</a></p>
                     <p style="margin-top: 8px;">Key research files with extensive sourcing:</p>
                     <ul style="margin-top: 8px;">
                         <li><code>research/thesis_a_2phase/facts.md</code> - 100+ sources on two-phase cooling</li>
