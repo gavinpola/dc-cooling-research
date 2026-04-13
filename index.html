@@ -3,21 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Center Cooling Investment Research | April 2026</title>
+    <title>Data Center Cooling: Investment Thesis Analysis | April 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-primary: #0a0a0a;
-            --bg-secondary: #141414;
-            --bg-card: #1a1a1a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --accent-green: #22c55e;
-            --accent-red: #ef4444;
-            --accent-yellow: #eab308;
-            --accent-blue: #3b82f6;
-            --border-color: #2a2a2a;
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -25,343 +15,520 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.7;
+            font-size: 15px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 32px;
         }
 
         /* Header */
         header {
-            background: var(--bg-secondary);
-            border-bottom: 1px solid var(--border-color);
-            padding: 20px 0;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 24px 0;
+            background: #fff;
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
-        header h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
         }
 
-        header p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
+        .header-title {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .header-date {
+            font-size: 13px;
+            color: #666;
         }
 
         /* Navigation */
         nav {
-            background: var(--bg-primary);
-            border-bottom: 1px solid var(--border-color);
-            padding: 15px 0;
+            background: #fafafa;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 12px 0;
             position: sticky;
-            top: 70px;
+            top: 73px;
             z-index: 99;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            gap: 30px;
-            overflow-x: auto;
+            gap: 32px;
+            flex-wrap: wrap;
         }
 
         nav a {
-            color: var(--text-secondary);
+            color: #666;
             text-decoration: none;
-            font-size: 0.9rem;
-            white-space: nowrap;
-            transition: color 0.2s;
+            font-size: 13px;
+            font-weight: 500;
+            transition: color 0.15s;
         }
 
-        nav a:hover, nav a.active {
-            color: var(--accent-blue);
+        nav a:hover {
+            color: #1a1a1a;
         }
 
         /* Main Content */
         main {
-            padding: 40px 0;
+            padding: 48px 0 80px;
         }
 
         section {
-            margin-bottom: 60px;
+            margin-bottom: 64px;
+        }
+
+        h1 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            line-height: 1.3;
         }
 
         h2 {
-            font-size: 1.75rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--border-color);
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #1a1a1a;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #1a1a1a;
         }
 
         h3 {
-            font-size: 1.25rem;
-            margin: 30px 0 15px;
-            color: var(--text-primary);
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 40px 0 16px;
+            color: #1a1a1a;
         }
 
         h4 {
-            font-size: 1rem;
-            margin: 20px 0 10px;
-            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         p {
-            margin-bottom: 15px;
-            color: var(--text-secondary);
+            margin-bottom: 16px;
+            color: #333;
         }
 
-        /* Score Cards */
-        .score-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .score-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 25px;
-        }
-
-        .score-card.strong-buy {
-            border-color: var(--accent-green);
-        }
-
-        .score-card.hold {
-            border-color: var(--accent-yellow);
-        }
-
-        .score-card.avoid {
-            border-color: var(--accent-red);
-        }
-
-        .score-card h3 {
-            margin: 0 0 10px;
-            font-size: 1.1rem;
-        }
-
-        .score {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin: 10px 0;
-        }
-
-        .score-card.strong-buy .score { color: var(--accent-green); }
-        .score-card.hold .score { color: var(--accent-yellow); }
-        .score-card.avoid .score { color: var(--accent-red); }
-
-        .recommendation {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
+        strong {
             font-weight: 600;
+            color: #1a1a1a;
         }
 
-        .strong-buy .recommendation { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
-        .hold .recommendation { background: rgba(234, 179, 8, 0.2); color: var(--accent-yellow); }
-        .avoid .recommendation { background: rgba(239, 68, 68, 0.2); color: var(--accent-red); }
+        /* Lead paragraph */
+        .lead {
+            font-size: 17px;
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        /* Summary Box */
+        .summary-box {
+            background: #f8f9fa;
+            border-left: 4px solid #1a1a1a;
+            padding: 24px 28px;
+            margin: 32px 0;
+        }
+
+        .summary-box h4 {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        .summary-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Verdict Cards */
+        .verdict-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 32px 0;
+        }
+
+        @media (max-width: 768px) {
+            .verdict-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .verdict-card {
+            border: 1px solid #e5e5e5;
+            padding: 24px;
+        }
+
+        .verdict-card h4 {
+            margin: 0 0 8px;
+            font-size: 13px;
+        }
+
+        .verdict-card .thesis-name {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        .verdict-score {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .verdict-card.buy .verdict-score { color: #16a34a; }
+        .verdict-card.hold .verdict-score { color: #ca8a04; }
+        .verdict-card.avoid .verdict-score { color: #dc2626; }
+
+        .verdict-label {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding: 4px 10px;
+            text-transform: uppercase;
+        }
+
+        .verdict-card.buy .verdict-label {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .verdict-card.hold .verdict-label {
+            background: #fef9c3;
+            color: #854d0e;
+        }
+        .verdict-card.avoid .verdict-label {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .verdict-card p {
+            margin-top: 16px;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 0;
+        }
 
         /* Tables */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 0.9rem;
+            margin: 24px 0;
+            font-size: 14px;
         }
 
         th, td {
-            padding: 12px 15px;
+            padding: 12px 16px;
             text-align: left;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid #e5e5e5;
         }
 
         th {
-            background: var(--bg-secondary);
+            background: #f8f9fa;
             font-weight: 600;
-            color: var(--text-primary);
+            color: #1a1a1a;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         td {
-            color: var(--text-secondary);
+            color: #333;
         }
 
-        tr:hover td {
-            background: var(--bg-secondary);
+        tbody tr:hover {
+            background: #fafafa;
         }
 
-        /* Market Stats */
-        .market-stats {
+        /* Stats Row */
+        .stats-row {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin: 32px 0;
+            padding: 24px 0;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
         }
 
-        .stat-box {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 20px;
+        @media (max-width: 768px) {
+            .stats-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .stat {
             text-align: center;
         }
 
         .stat-value {
-            font-size: 2rem;
+            font-size: 28px;
             font-weight: 700;
-            color: var(--accent-blue);
+            color: #1a1a1a;
         }
 
         .stat-label {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-top: 5px;
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        /* Thesis Detail */
-        .thesis-detail {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-        }
-
-        .bull-bear {
+        /* Two Column Layout */
+        .two-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin: 20px 0;
+            gap: 32px;
+            margin: 24px 0;
         }
 
         @media (max-width: 768px) {
-            .bull-bear {
+            .two-col {
                 grid-template-columns: 1fr;
             }
         }
 
-        .bull, .bear {
-            padding: 20px;
-            border-radius: 8px;
+        .col-box {
+            padding: 24px;
+            border: 1px solid #e5e5e5;
         }
 
-        .bull {
-            background: rgba(34, 197, 94, 0.1);
-            border: 1px solid rgba(34, 197, 94, 0.3);
+        .col-box.green {
+            border-color: #bbf7d0;
+            background: #f0fdf4;
         }
 
-        .bear {
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid rgba(239, 68, 68, 0.3);
+        .col-box.red {
+            border-color: #fecaca;
+            background: #fef2f2;
         }
 
-        .bull h4 { color: var(--accent-green); margin-top: 0; }
-        .bear h4 { color: var(--accent-red); margin-top: 0; }
+        .col-box h4 {
+            margin-top: 0;
+        }
 
-        ul {
-            margin: 15px 0;
-            padding-left: 20px;
+        .col-box.green h4 { color: #166534; }
+        .col-box.red h4 { color: #991b1b; }
+
+        /* Lists */
+        ul, ol {
+            margin: 16px 0;
+            padding-left: 24px;
+            color: #333;
         }
 
         li {
             margin-bottom: 8px;
-            color: var(--text-secondary);
         }
 
-        /* Key Insight Box */
-        .insight-box {
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
+        li::marker {
+            color: #999;
         }
 
-        .insight-box h4 {
-            color: var(--accent-blue);
-            margin-top: 0;
-        }
-
-        /* Company Grid */
+        /* Company Cards */
         .company-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            margin: 20px 0;
+            margin: 24px 0;
+        }
+
+        @media (max-width: 768px) {
+            .company-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .company-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
+            border: 1px solid #e5e5e5;
             padding: 20px;
         }
 
         .company-card h4 {
-            margin: 0 0 10px;
-            color: var(--text-primary);
+            margin: 0 0 4px;
+            font-size: 15px;
+            text-transform: none;
+            letter-spacing: 0;
         }
 
         .company-meta {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 10px;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 12px;
         }
 
-        .funding-badge {
+        .funding-tag {
             display: inline-block;
-            background: var(--accent-blue);
-            color: white;
-            padding: 3px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 3px 8px;
+            font-size: 11px;
             font-weight: 600;
+        }
+
+        .company-card p {
+            font-size: 14px;
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
+
+        /* Opportunity Cards */
+        .opportunity-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .opportunity-card {
+            border: 1px solid #e5e5e5;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 24px;
+            align-items: start;
+        }
+
+        @media (max-width: 768px) {
+            .opportunity-card {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .opportunity-card.tier1 {
+            border-left: 4px solid #16a34a;
+        }
+
+        .opportunity-card.tier2 {
+            border-left: 4px solid #ca8a04;
+        }
+
+        .opportunity-card.avoid {
+            border-left: 4px solid #dc2626;
+        }
+
+        .opportunity-title {
+            font-weight: 600;
+            font-size: 15px;
+            color: #1a1a1a;
+        }
+
+        .opportunity-tier {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 4px;
+        }
+
+        .tier1 .opportunity-tier { color: #16a34a; }
+        .tier2 .opportunity-tier { color: #ca8a04; }
+        .avoid .opportunity-tier { color: #dc2626; }
+
+        .opportunity-desc {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .opportunity-desc p {
+            margin-bottom: 8px;
+        }
+
+        .opportunity-desc p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Callout */
+        .callout {
+            background: #f8f9fa;
+            padding: 24px 28px;
+            margin: 32px 0;
+            border: 1px solid #e5e5e5;
+        }
+
+        .callout h4 {
+            margin-top: 0;
+        }
+
+        .callout p:last-child {
+            margin-bottom: 0;
         }
 
         /* Footer */
         footer {
-            border-top: 1px solid var(--border-color);
-            padding: 40px 0;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
+            border-top: 1px solid #e5e5e5;
+            padding: 32px 0;
+            margin-top: 48px;
         }
 
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
+        footer p {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        footer p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Print Styles */
+        @media print {
+            header, nav {
+                position: static;
+            }
+            .container {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Data Center Cooling Investment Research</h1>
-            <p>Three-Thesis Analysis | April 2026</p>
+            <div class="header-content">
+                <div class="header-title">Data Center Cooling: Investment Thesis Analysis</div>
+                <div class="header-date">April 2026</div>
+            </div>
         </div>
     </header>
 
     <nav>
         <div class="container">
             <ul>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#thesis-a">Thesis A: Two-Phase</a></li>
-                <li><a href="#thesis-b">Thesis B: High Ambient</a></li>
-                <li><a href="#thesis-c">Thesis C: Radiative</a></li>
-                <li><a href="#market">Market Sizing</a></li>
-                <li><a href="#startups">Startups</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#summary">Executive Summary</a></li>
+                <li><a href="#market">Market Overview</a></li>
+                <li><a href="#thesis-a">Thesis A</a></li>
+                <li><a href="#thesis-b">Thesis B</a></li>
+                <li><a href="#thesis-c">Thesis C</a></li>
+                <li><a href="#landscape">Competitive Landscape</a></li>
+                <li><a href="#portfolio">Investment Recommendations</a></li>
                 <li><a href="#startup-guide">Startup Guide</a></li>
             </ul>
         </div>
@@ -371,84 +538,87 @@
         <div class="container">
             <!-- Executive Summary -->
             <section id="summary">
-                <h2>Executive Summary</h2>
+                <h1>Three-Thesis Analysis of Data Center Cooling Technologies</h1>
 
-                <p>This analysis evaluates three approaches to data center cooling for AI infrastructure. The verdict is clear: liquid cooling technology is the investable thesis, with two-phase direct-to-chip positioned for the highest-value segment.</p>
+                <p class="lead">This report evaluates three distinct approaches to data center cooling for AI infrastructure: two-phase direct-to-chip liquid cooling, high ambient temperature tolerance, and passive radiative cooling to space. Our analysis concludes that liquid cooling technology&mdash;particularly two-phase direct-to-chip&mdash;represents the primary investable thesis.</p>
 
-                <div class="score-cards">
-                    <div class="score-card strong-buy">
-                        <h3>Thesis A: Two-Phase Direct-to-Chip</h3>
-                        <div class="score">4.15/5</div>
-                        <span class="recommendation">STRONG BUY</span>
-                        <p style="margin-top: 15px;">Only technology handling 120-500kW rack densities. Hyperscaler adoption proven.</p>
+                <div class="verdict-grid">
+                    <div class="verdict-card buy">
+                        <h4>Thesis A</h4>
+                        <div class="thesis-name">Two-Phase Direct-to-Chip</div>
+                        <div class="verdict-score">4.15</div>
+                        <span class="verdict-label">Strong Buy</span>
+                        <p>Only technology capable of handling 120-500kW rack densities. Hyperscaler adoption validated.</p>
                     </div>
 
-                    <div class="score-card hold">
-                        <h3>Thesis B: High Ambient Tolerance</h3>
-                        <div class="score">3.45/5</div>
-                        <span class="recommendation">HOLD</span>
-                        <p style="margin-top: 15px;">Operational practice, not technology. Already adopted by hyperscalers. Limited investment thesis.</p>
+                    <div class="verdict-card hold">
+                        <h4>Thesis B</h4>
+                        <div class="thesis-name">High Ambient Tolerance</div>
+                        <div class="verdict-score">3.45</div>
+                        <span class="verdict-label">Hold</span>
+                        <p>Operational practice, not investable technology. Already adopted by leading hyperscalers.</p>
                     </div>
 
-                    <div class="score-card avoid">
-                        <h3>Thesis C: Space-Based Radiative</h3>
-                        <div class="score">1.70/5</div>
-                        <span class="recommendation">AVOID</span>
-                        <p style="margin-top: 15px;">500-5,000x scale mismatch. Physics constraints insurmountable. Not viable for DCs.</p>
+                    <div class="verdict-card avoid">
+                        <h4>Thesis C</h4>
+                        <div class="thesis-name">Space-Based Radiative</div>
+                        <div class="verdict-score">1.70</div>
+                        <span class="verdict-label">Avoid</span>
+                        <p>Fundamental scale mismatch (500-5,000x). Physics constraints are insurmountable.</p>
                     </div>
                 </div>
 
-                <div class="insight-box">
-                    <h4>The One-Sentence Summary</h4>
-                    <p style="margin: 0; color: var(--text-primary); font-size: 1.1rem;">Invest in liquid cooling technology (especially two-phase direct-to-chip), ignore operational optimizations like high ambient tolerance, and avoid speculative approaches like radiative cooling.</p>
+                <div class="summary-box">
+                    <h4>Key Recommendation</h4>
+                    <p>Invest in liquid cooling technology (with emphasis on two-phase direct-to-chip), maintain neutral exposure to high ambient tolerance strategies, and avoid speculative approaches such as radiative cooling for data center applications.</p>
                 </div>
             </section>
 
             <!-- Market Overview -->
             <section id="market">
-                <h2>Market Sizing</h2>
+                <h2>Market Overview</h2>
 
-                <div class="market-stats">
-                    <div class="stat-box">
+                <div class="stats-row">
+                    <div class="stat">
                         <div class="stat-value">$5-6B</div>
                         <div class="stat-label">2025 Market Size</div>
                     </div>
-                    <div class="stat-box">
+                    <div class="stat">
                         <div class="stat-value">$15-20B</div>
                         <div class="stat-label">2030 Projection</div>
                     </div>
-                    <div class="stat-box">
+                    <div class="stat">
                         <div class="stat-value">25%+</div>
                         <div class="stat-label">CAGR</div>
                     </div>
-                    <div class="stat-box">
+                    <div class="stat">
                         <div class="stat-value">76%</div>
                         <div class="stat-label">Hyperscaler Share</div>
                     </div>
                 </div>
 
-                <h3>Market Segmentation (2025)</h3>
+                <h3>Market Segmentation</h3>
                 <table>
                     <thead>
                         <tr>
                             <th>Technology</th>
-                            <th>Market Share</th>
+                            <th>Market Share (2025)</th>
                             <th>Growth Rate</th>
-                            <th>Notes</th>
+                            <th>Commentary</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Direct-to-Chip</td>
+                            <td>Direct-to-Chip Cooling</td>
                             <td>42.85%</td>
                             <td>22%+ CAGR</td>
-                            <td>Largest segment, AI-driven</td>
+                            <td>Largest segment, driven by AI demand</td>
                         </tr>
                         <tr>
                             <td>Immersion Cooling</td>
                             <td>~25%</td>
                             <td>26.62% CAGR</td>
-                            <td>Fastest growing</td>
+                            <td>Fastest growing segment</td>
                         </tr>
                         <tr>
                             <td>Rear-Door Heat Exchangers</td>
@@ -457,7 +627,7 @@
                             <td>Commoditizing</td>
                         </tr>
                         <tr>
-                            <td>Other Liquid</td>
+                            <td>Other Liquid Cooling</td>
                             <td>~12%</td>
                             <td>Various</td>
                             <td>Mixed approaches</td>
@@ -465,233 +635,238 @@
                     </tbody>
                 </table>
 
-                <h3>Key Market Drivers</h3>
+                <h3>Primary Market Drivers</h3>
                 <ul>
-                    <li><strong>AI GPU Heat Density:</strong> NVIDIA Blackwell at 1,200-2,700W per chip</li>
-                    <li><strong>Hyperscaler CapEx:</strong> "Big Five" spending $600B+ in 2026, 75% AI-related</li>
-                    <li><strong>Sustainability Mandates:</strong> EU efficiency regulations, corporate water targets</li>
-                    <li><strong>Air Cooling Ceiling:</strong> ~40kW/rack max, AI clusters need 120kW+</li>
+                    <li><strong>AI GPU Thermal Density:</strong> NVIDIA Blackwell chips operate at 1,200-2,700W, exceeding air cooling capabilities</li>
+                    <li><strong>Hyperscaler Capital Expenditure:</strong> Combined spending by major cloud providers exceeds $600B in 2026, with approximately 75% allocated to AI infrastructure</li>
+                    <li><strong>Sustainability Requirements:</strong> EU efficiency regulations and corporate water reduction commitments</li>
+                    <li><strong>Air Cooling Physical Limits:</strong> Maximum practical capacity of ~40kW per rack; AI clusters require 120kW+</li>
                 </ul>
             </section>
 
-            <!-- Thesis A Detail -->
+            <!-- Thesis A -->
             <section id="thesis-a">
                 <h2>Thesis A: Two-Phase Direct-to-Chip Cooling</h2>
 
-                <div class="thesis-detail">
-                    <h3>The Core Thesis</h3>
-                    <p>Two-phase direct-to-chip liquid cooling using dielectric fluids or refrigerants will become the dominant cooling approach for high-density AI data centers.</p>
+                <p class="lead">Two-phase direct-to-chip liquid cooling using dielectric fluids or refrigerants will become the dominant cooling approach for high-density AI data centers.</p>
 
-                    <h3>Why It Works</h3>
-                    <ul>
-                        <li>Heat transfer coefficients of <strong>10,000-23,200 W/m2K</strong> (50-100x air cooling)</li>
-                        <li>Handles rack densities of <strong>150-500kW</strong> (vs 40kW air ceiling)</li>
-                        <li>NVIDIA GB200 NVL72 at 120kW <strong>requires</strong> liquid cooling</li>
-                        <li>Vertiv holds <strong>70%+ market share</strong> for GB200 cooling</li>
-                    </ul>
+                <h3>Technical Foundation</h3>
+                <ul>
+                    <li>Heat transfer coefficients of 10,000-23,200 W/m²K (50-100x improvement over air cooling)</li>
+                    <li>Capable of managing rack densities of 150-500kW (compared to ~40kW ceiling for air cooling)</li>
+                    <li>NVIDIA GB200 NVL72 systems at 120kW continuous load require liquid cooling by specification</li>
+                    <li>Vertiv currently holds greater than 70% market share for GB200 rack cooling systems</li>
+                </ul>
 
-                    <div class="bull-bear">
-                        <div class="bull">
-                            <h4>Bull Case Highlights</h4>
-                            <ul>
-                                <li>Physics advantage is permanent - latent heat transfer</li>
-                                <li>Hyperscalers deploying at scale (Meta, Microsoft, Google, AWS)</li>
-                                <li>41% CAPEX savings vs air cooling for 10MW DC</li>
-                                <li>35% OpEx savings vs single-phase liquid</li>
-                                <li>Non-PFAS alternatives exist (HFO refrigerants)</li>
-                            </ul>
-                        </div>
-                        <div class="bear">
-                            <h4>Bear Case Highlights</h4>
-                            <ul>
-                                <li>PFAS regulatory risk for fluorocarbon fluids</li>
-                                <li>Single-phase microchannels closing performance gap</li>
-                                <li>Operational complexity vs single-phase</li>
-                                <li>Supply chain concentration risk</li>
-                                <li>May become niche, not dominant</li>
-                            </ul>
-                        </div>
+                <div class="two-col">
+                    <div class="col-box green">
+                        <h4>Bull Case</h4>
+                        <ul>
+                            <li>Physics advantage through latent heat transfer is permanent</li>
+                            <li>Active deployment by Meta, Microsoft, Google, and AWS</li>
+                            <li>41% CAPEX savings versus air cooling for 10MW facilities</li>
+                            <li>35% OpEx savings versus single-phase liquid alternatives</li>
+                            <li>Non-PFAS alternatives (HFO refrigerants) address regulatory concerns</li>
+                        </ul>
                     </div>
-
-                    <h3>Investment Verdict</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Metric</th>
-                                <th>Assessment</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Score</td><td><strong>4.15 / 5.00</strong></td></tr>
-                            <tr><td>Recommendation</td><td><strong>STRONG BUY</strong></td></tr>
-                            <tr><td>Confidence</td><td>70%</td></tr>
-                            <tr><td>Time Horizon</td><td>3-5 years for full thesis realization</td></tr>
-                        </tbody>
-                    </table>
+                    <div class="col-box red">
+                        <h4>Bear Case</h4>
+                        <ul>
+                            <li>PFAS regulatory risk for fluorocarbon-based fluids</li>
+                            <li>Single-phase microchannel technology closing performance gap</li>
+                            <li>Higher operational complexity versus single-phase systems</li>
+                            <li>Supply chain concentration presents vendor risk</li>
+                            <li>May remain specialized rather than achieving true dominance</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <h3>Investment Assessment</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Assessment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Weighted Score</td>
+                            <td><strong>4.15 / 5.00</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Recommendation</td>
+                            <td><strong>Strong Buy</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Confidence Level</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td>Investment Horizon</td>
+                            <td>3-5 years for full thesis realization</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
-            <!-- Thesis B Detail -->
+            <!-- Thesis B -->
             <section id="thesis-b">
                 <h2>Thesis B: High Ambient Temperature Tolerance</h2>
 
-                <div class="thesis-detail">
-                    <h3>The Core Thesis</h3>
-                    <p>High ambient temperature tolerance (35-45C+) represents the most economically rational approach to data center cooling, enabling elimination of mechanical cooling through architectural and operational optimization.</p>
+                <p class="lead">High ambient temperature tolerance (35-45°C+) represents an economically rational approach to data center cooling, enabling reduction or elimination of mechanical cooling through operational optimization.</p>
 
-                    <h3>The Reality Check</h3>
-                    <ul>
-                        <li>ASHRAE H1 class (for AI equipment) requires <strong>18-25C</strong> - tighter, not looser</li>
-                        <li>This is an <strong>operational practice</strong>, not a technology you can invest in</li>
-                        <li>Hyperscalers already do this - no growth opportunity</li>
-                        <li>Doesn't solve density problem (still need liquid cooling for 120kW+ racks)</li>
-                    </ul>
+                <h3>Critical Assessment</h3>
+                <ul>
+                    <li>ASHRAE H1 class specifications for AI equipment require 18-25°C&mdash;more restrictive, not less</li>
+                    <li>This represents an operational practice rather than an investable technology</li>
+                    <li>Leading hyperscalers have already adopted these practices; limited growth opportunity remains</li>
+                    <li>Does not address the fundamental density challenge; liquid cooling remains necessary for 120kW+ racks</li>
+                </ul>
 
-                    <div class="bull-bear">
-                        <div class="bull">
-                            <h4>Bull Case Highlights</h4>
-                            <ul>
-                                <li>Google chiller-less since 2008 (Belgium)</li>
-                                <li>Meta Prineville operates at 110F outdoor temps</li>
-                                <li>30-50% cooling energy reduction possible</li>
-                                <li>Free cooling works 90%+ of year in Nordic climates</li>
-                            </ul>
-                        </div>
-                        <div class="bear">
-                            <h4>Bear Case Highlights</h4>
-                            <ul>
-                                <li>AI chips need COOLER temps, not warmer (H1 class)</li>
-                                <li>Fails in humid climates (Singapore, Southeast Asia)</li>
-                                <li>Fan power increases offset temperature savings</li>
-                                <li>Not investable - it's an operating practice</li>
-                            </ul>
-                        </div>
+                <div class="two-col">
+                    <div class="col-box green">
+                        <h4>Bull Case</h4>
+                        <ul>
+                            <li>Google has operated without chillers since 2008 (Belgium facility)</li>
+                            <li>Meta Prineville operates successfully at 110°F outdoor temperatures</li>
+                            <li>30-50% cooling energy reduction achievable in suitable climates</li>
+                            <li>Free cooling available 90%+ of year in Nordic regions</li>
+                        </ul>
                     </div>
-
-                    <h3>Investment Verdict</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Metric</th>
-                                <th>Assessment</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Score</td><td><strong>3.45 / 5.00</strong></td></tr>
-                            <tr><td>Recommendation</td><td><strong>HOLD</strong> (for specific segments)</td></tr>
-                            <tr><td>Confidence</td><td>75%</td></tr>
-                            <tr><td>Investment Thesis</td><td>Nordic DC operators only (real estate play)</td></tr>
-                        </tbody>
-                    </table>
+                    <div class="col-box red">
+                        <h4>Bear Case</h4>
+                        <ul>
+                            <li>AI equipment specifications trend toward cooler requirements (H1 class)</li>
+                            <li>Strategy fails in humid climates (Singapore, Southeast Asia)</li>
+                            <li>Increased fan power consumption partially offsets temperature savings</li>
+                            <li>No direct investment thesis&mdash;operational practice only</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <h3>Investment Assessment</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Assessment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Weighted Score</td>
+                            <td><strong>3.45 / 5.00</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Recommendation</td>
+                            <td><strong>Hold</strong> (limited to Nordic DC operators as real estate play)</td>
+                        </tr>
+                        <tr>
+                            <td>Confidence Level</td>
+                            <td>75%</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
-            <!-- Thesis C Detail -->
+            <!-- Thesis C -->
             <section id="thesis-c">
                 <h2>Thesis C: Space-Based Passive Radiative Cooling</h2>
 
-                <div class="thesis-detail">
-                    <h3>The Core Thesis</h3>
-                    <p>Passive radiative cooling to space could dramatically reduce or eliminate active mechanical cooling in data centers by exploiting the atmospheric transparency window (8-13 micrometers).</p>
+                <p class="lead">Passive radiative cooling to space could theoretically reduce or eliminate active mechanical cooling by exploiting the atmospheric transparency window (8-13 micrometers).</p>
 
-                    <h3>Why It Fails</h3>
-                    <ul>
-                        <li><strong>Scale mismatch:</strong> 100 W/m2 capacity vs 100 kW/rack requirement (500-5,000x gap)</li>
-                        <li><strong>A single 100kW rack</strong> would need 1,000 m2 of panels (quarter acre)</li>
-                        <li><strong>Geographic constraints:</strong> Fails in humid climates where major DC markets are</li>
-                        <li><strong>Physics ceiling:</strong> ~150 W/m2 is the theoretical maximum</li>
-                        <li><strong>Building HVAC technology:</strong> SkyCool is an HVAC company, not DC cooling</li>
-                    </ul>
+                <h3>Fundamental Limitations</h3>
+                <ul>
+                    <li><strong>Scale mismatch:</strong> Technology delivers approximately 100 W/m² versus data center requirements of 100+ kW per rack (500-5,000x gap)</li>
+                    <li><strong>Land requirements:</strong> A single 100kW rack would require 1,000 m² of radiative panels</li>
+                    <li><strong>Geographic constraints:</strong> Performance degrades significantly in humid climates where major data center markets are located</li>
+                    <li><strong>Physics ceiling:</strong> Approximately 150 W/m² represents the theoretical maximum</li>
+                    <li><strong>Market positioning:</strong> SkyCool Systems operates in building HVAC augmentation, not data center cooling</li>
+                </ul>
 
-                    <div class="bull-bear">
-                        <div class="bull">
-                            <h4>Bull Case Highlights</h4>
-                            <ul>
-                                <li>Zero electricity, zero water operation</li>
-                                <li>SkyCool achieves 10-40% HVAC efficiency gains</li>
-                                <li>Could supplement edge computing cooling</li>
-                                <li>Orbital computing driving R&D investment</li>
-                            </ul>
-                        </div>
-                        <div class="bear">
-                            <h4>Bear Case Highlights</h4>
-                            <ul>
-                                <li>Cannot bridge 500-5,000x scale gap</li>
-                                <li>Physics limits are hard caps, not engineering problems</li>
-                                <li>Hong Kong tests: NO daytime cooling effect</li>
-                                <li>Liquid cooling already solved the problem</li>
-                                <li>A $5,000 mini-split is the competitor for edge</li>
-                            </ul>
-                        </div>
+                <div class="two-col">
+                    <div class="col-box green">
+                        <h4>Bull Case</h4>
+                        <ul>
+                            <li>Zero electricity and zero water consumption in operation</li>
+                            <li>SkyCool demonstrates 10-40% HVAC efficiency improvements</li>
+                            <li>Potential application for edge computing supplementation</li>
+                            <li>Orbital computing development driving R&D investment</li>
+                        </ul>
                     </div>
-
-                    <h3>Investment Verdict</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Metric</th>
-                                <th>Assessment</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Score</td><td><strong>1.70 / 5.00</strong></td></tr>
-                            <tr><td>Recommendation</td><td><strong>AVOID</strong></td></tr>
-                            <tr><td>Confidence</td><td>90%</td></tr>
-                            <tr><td>Note</td><td>Interesting science, not investable opportunity</td></tr>
-                        </tbody>
-                    </table>
+                    <div class="col-box red">
+                        <h4>Bear Case</h4>
+                        <ul>
+                            <li>Cannot bridge the 500-5,000x scale gap</li>
+                            <li>Physics limits represent hard constraints, not engineering problems</li>
+                            <li>Hong Kong field tests showed no daytime cooling effect</li>
+                            <li>Liquid cooling has already solved the core problem</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <h3>Investment Assessment</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Assessment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Weighted Score</td>
+                            <td><strong>1.70 / 5.00</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Recommendation</td>
+                            <td><strong>Avoid</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Confidence Level</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td>Note</td>
+                            <td>Represents interesting science but not an investable opportunity</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
-            <!-- Startups -->
-            <section id="startups">
-                <h2>Startup Landscape</h2>
+            <!-- Competitive Landscape -->
+            <section id="landscape">
+                <h2>Competitive Landscape</h2>
 
-                <h3>Two-Phase Cooling Leaders</h3>
+                <h3>Two-Phase Cooling Technology Leaders</h3>
                 <div class="company-grid">
                     <div class="company-card">
                         <h4>ZutaCore</h4>
-                        <div class="company-meta">Israel | Founded 2016 | HyperCool Technology</div>
-                        <span class="funding-badge">$96M Raised</span>
-                        <p style="margin-top: 10px;">Two-phase direct-to-chip. Key investors: Carrier, Mitsubishi, Wiwynn. Products handle 240kW+ per rack.</p>
+                        <div class="company-meta">Israel &middot; Founded 2016 &middot; HyperCool Technology</div>
+                        <span class="funding-tag">$96M Raised</span>
+                        <p>Two-phase direct-to-chip cooling. Key investors include Carrier, Mitsubishi Heavy Industries, and Wiwynn. Products support 240kW+ per rack configurations.</p>
                     </div>
 
                     <div class="company-card">
                         <h4>Accelsius</h4>
-                        <div class="company-meta">Texas | Founded 2022 | NeuCool (Bell Labs)</div>
-                        <span class="funding-badge">$107M Raised</span>
-                        <p style="margin-top: 10px;">Two-phase DTC, 150kW/rack. Backed by Johnson Controls, Legrand. DarkNX 300MW deployment.</p>
+                        <div class="company-meta">Texas &middot; Founded 2022 &middot; NeuCool (Bell Labs origin)</div>
+                        <span class="funding-tag">$107M Raised</span>
+                        <p>Two-phase direct-to-chip, 150kW per rack capacity. Strategic backing from Johnson Controls and Legrand. DarkNX 300MW deployment announced.</p>
                     </div>
 
                     <div class="company-card">
-                        <h4>LiquidStack (Trane)</h4>
-                        <div class="company-meta">Acquired Feb 2026 | Two-Phase Immersion</div>
-                        <span class="funding-badge">Acquired by Trane</span>
-                        <p style="margin-top: 10px;">Two-phase immersion pioneer. Microsoft Quincy deployment. Tanks rated to 252kW.</p>
-                    </div>
-                </div>
-
-                <h3>Single-Phase / Direct-to-Chip Leaders</h3>
-                <div class="company-grid">
-                    <div class="company-card">
-                        <h4>JetCool (Flex)</h4>
-                        <div class="company-meta">Acquired Nov 2024 | Microconvective Cooling</div>
-                        <span class="funding-badge">Acquired by Flex</span>
-                        <p style="margin-top: 10px;">MIT Lincoln Lab spinout. Fluid jets, not microchannels. Collaborating with Broadcom on AI XPUs.</p>
+                        <h4>LiquidStack</h4>
+                        <div class="company-meta">Acquired by Trane Technologies &middot; February 2026</div>
+                        <span class="funding-tag">Acquired</span>
+                        <p>Two-phase immersion cooling pioneer. Microsoft Quincy deployment. Tank systems rated to 252kW capacity.</p>
                     </div>
 
                     <div class="company-card">
-                        <h4>CoolIT Systems</h4>
-                        <div class="company-meta">Calgary | Founded 2001 | Single-Phase DTC</div>
-                        <span class="funding-badge">Scaled, May IPO</span>
-                        <p style="margin-top: 10px;">Largest DLC provider by volume. 300 H100 GPUs at 62C junction temps demonstrated.</p>
-                    </div>
-
-                    <div class="company-card">
-                        <h4>GRC</h4>
-                        <div class="company-meta">Austin | Founded 2009 | Single-Phase Immersion</div>
-                        <span class="funding-badge">$20M+ Raised</span>
-                        <p style="margin-top: 10px;">Hydrocarbon-based ElectroSafe fluid. No PFAS concerns. US DoD customer.</p>
+                        <h4>JetCool Technologies</h4>
+                        <div class="company-meta">Acquired by Flex &middot; November 2024</div>
+                        <span class="funding-tag">Acquired</span>
+                        <p>MIT Lincoln Lab spinout. Microconvective cooling using fluid jets. Active collaboration with Broadcom on next-generation AI XPUs.</p>
                     </div>
                 </div>
 
@@ -701,28 +876,28 @@
                         <tr>
                             <th>Acquirer</th>
                             <th>Target</th>
-                            <th>Value</th>
+                            <th>Transaction Value</th>
                             <th>Date</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Eaton</td>
+                            <td>Eaton Corporation</td>
                             <td>Boyd Thermal</td>
-                            <td><strong>$9.5B</strong></td>
+                            <td>$9.5 billion</td>
                             <td>2025</td>
                         </tr>
                         <tr>
                             <td>Trane Technologies</td>
                             <td>LiquidStack</td>
                             <td>Undisclosed</td>
-                            <td>Feb 2026</td>
+                            <td>February 2026</td>
                         </tr>
                         <tr>
-                            <td>Flex</td>
-                            <td>JetCool</td>
+                            <td>Flex Ltd</td>
+                            <td>JetCool Technologies</td>
                             <td>Undisclosed</td>
-                            <td>Nov 2024</td>
+                            <td>November 2024</td>
                         </tr>
                         <tr>
                             <td>Schneider Electric</td>
@@ -734,9 +909,9 @@
                 </table>
             </section>
 
-            <!-- Portfolio Recommendations -->
+            <!-- Investment Recommendations -->
             <section id="portfolio">
-                <h2>Portfolio Recommendations</h2>
+                <h2>Investment Recommendations</h2>
 
                 <h3>Public Market Positions</h3>
                 <table>
@@ -744,7 +919,7 @@
                         <tr>
                             <th>Company</th>
                             <th>Ticker</th>
-                            <th>Thesis</th>
+                            <th>Investment Thesis</th>
                             <th>Conviction</th>
                         </tr>
                     </thead>
@@ -752,43 +927,43 @@
                         <tr>
                             <td>Vertiv Holdings</td>
                             <td>VRT</td>
-                            <td>70%+ GB200 share, liquid cooling leader</td>
-                            <td><strong>HIGH</strong></td>
+                            <td>Greater than 70% GB200 market share; liquid cooling category leader</td>
+                            <td>High</td>
                         </tr>
                         <tr>
                             <td>Eaton Corporation</td>
                             <td>ETN</td>
-                            <td>Boyd acquisition provides full portfolio</td>
-                            <td><strong>HIGH</strong></td>
+                            <td>Boyd acquisition provides comprehensive thermal management portfolio</td>
+                            <td>High</td>
                         </tr>
                         <tr>
                             <td>Flex Ltd</td>
                             <td>FLEX</td>
-                            <td>JetCool acquisition, vertical integration</td>
-                            <td><strong>HIGH</strong></td>
+                            <td>JetCool acquisition enables vertical integration strategy</td>
+                            <td>High</td>
                         </tr>
                         <tr>
                             <td>Trane Technologies</td>
                             <td>TT</td>
-                            <td>LiquidStack acquisition</td>
-                            <td>MODERATE</td>
+                            <td>LiquidStack acquisition provides two-phase immersion capability</td>
+                            <td>Moderate</td>
                         </tr>
                         <tr>
                             <td>Innventure Inc</td>
                             <td>INV</td>
-                            <td>Accelsius parent company</td>
-                            <td>MODERATE</td>
+                            <td>Parent company of Accelsius</td>
+                            <td>Moderate</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <h3>Suggested Allocation</h3>
+                <h3>Suggested Portfolio Allocation</h3>
                 <table>
                     <thead>
                         <tr>
                             <th>Category</th>
                             <th>Allocation</th>
-                            <th>Vehicles</th>
+                            <th>Investment Vehicles</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -800,7 +975,7 @@
                         <tr>
                             <td>Integrated Infrastructure</td>
                             <td>30%</td>
-                            <td>Eaton, Trane, Flex</td>
+                            <td>Eaton, Trane Technologies, Flex</td>
                         </tr>
                         <tr>
                             <td>Private Market</td>
@@ -808,21 +983,21 @@
                             <td>ZutaCore, CoolIT, GRC</td>
                         </tr>
                         <tr>
-                            <td>Speculative/Optionality</td>
+                            <td>Optionality</td>
                             <td>10%</td>
-                            <td>Nordic DC operators, edge cooling</td>
+                            <td>Nordic DC operators, edge cooling specialists</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div class="insight-box">
-                    <h4>Five-Year Return Expectations</h4>
-                    <table style="margin: 0;">
+                <div class="callout">
+                    <h4>Return Expectations</h4>
+                    <table>
                         <thead>
                             <tr>
                                 <th>Timeframe</th>
-                                <th>Conviction</th>
-                                <th>Expected Return</th>
+                                <th>Conviction Level</th>
+                                <th>Expected Return Range</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -832,12 +1007,12 @@
                                 <td>15-25%</td>
                             </tr>
                             <tr>
-                                <td>3 Year</td>
+                                <td>3 Years</td>
                                 <td>High</td>
                                 <td>75-150%</td>
                             </tr>
                             <tr>
-                                <td>5 Year</td>
+                                <td>5 Years</td>
                                 <td>Moderate-High</td>
                                 <td>100-300%</td>
                             </tr>
@@ -846,124 +1021,154 @@
                 </div>
             </section>
 
-            <!-- Startup Founder's Guide -->
+            <!-- Startup Guide -->
             <section id="startup-guide">
                 <h2>Startup Founder's Guide</h2>
 
-                <div class="insight-box" style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3);">
-                    <h4 style="color: var(--accent-red);">The Honest Assessment</h4>
-                    <p style="margin: 0; color: var(--text-primary);">Should you start a liquid cooling company in 2026? <strong>Probably not</strong>, unless you have a specific unfair advantage. The market is consolidating, leaders are established, and strategic acquirers are actively buying startups.</p>
+                <div class="summary-box" style="border-left-color: #dc2626;">
+                    <h4>Assessment for New Entrants</h4>
+                    <p>Should you start a liquid cooling company in 2026? <strong>Likely not</strong>, unless you possess a specific unfair advantage. The market is consolidating, category leaders are established, and strategic acquirers are actively purchasing startups at compressed multiples.</p>
                 </div>
 
-                <h3>Why Timing Is Challenging</h3>
+                <h3>Market Entry Challenges</h3>
                 <table>
                     <thead>
                         <tr>
-                            <th>Reality</th>
-                            <th>Impact on New Startups</th>
+                            <th>Market Reality</th>
+                            <th>Impact on New Entrants</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Vertiv has 70%+ GB200 share</td>
-                            <td>Hyperscalers already have preferred vendors</td>
+                            <td>Vertiv holds 70%+ GB200 market share</td>
+                            <td>Hyperscalers have established vendor relationships</td>
                         </tr>
                         <tr>
-                            <td>4+ major acquisitions in 18 months</td>
-                            <td>Strategic buyers consolidating; fewer exit options</td>
+                            <td>Four major acquisitions in 18 months</td>
+                            <td>Strategic consolidation reduces exit options and valuations</td>
                         </tr>
                         <tr>
                             <td>18-24 month qualification cycles</td>
-                            <td>Long sales cycles drain runway</td>
+                            <td>Extended sales cycles require significant runway</td>
                         </tr>
                         <tr>
-                            <td>Hardware requires manufacturing scale</td>
-                            <td>Capital-intensive to compete on cost</td>
+                            <td>Hardware manufacturing scale requirements</td>
+                            <td>Capital-intensive competition on cost basis</td>
                         </tr>
                         <tr>
-                            <td>Technology is proven</td>
-                            <td>No "10x better" breakthrough available</td>
+                            <td>Technology has been validated</td>
+                            <td>No "10x improvement" breakthrough opportunities available</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <h3>Where Opportunities Still Exist</h3>
+                <h3>Opportunity Assessment by Tier</h3>
 
-                <div class="company-grid">
-                    <div class="company-card" style="border-color: var(--accent-green);">
-                        <h4 style="color: var(--accent-green);">Tier 1: Non-PFAS Coolant Chemistry</h4>
-                        <p>Two-phase cooling faces PFAS regulatory risk. Whoever develops the "drop-in non-PFAS replacement" wins. Chemistry moat, regulatory tailwind.</p>
-                        <p><strong>Who should do this:</strong> Chemistry PhDs, spinouts from Honeywell/Chemours</p>
-                        <p><strong>Potential acquirers:</strong> Honeywell, Chemours, 3M, Solvay</p>
+                <div class="opportunity-grid">
+                    <div class="opportunity-card tier1">
+                        <div>
+                            <div class="opportunity-title">Non-PFAS Coolant Chemistry</div>
+                            <div class="opportunity-tier">Tier 1 &middot; Defensible</div>
+                        </div>
+                        <div class="opportunity-desc">
+                            <p>Two-phase cooling faces PFAS regulatory risk. Developer of a compliant drop-in replacement fluid captures significant value. Requires chemistry moat and benefits from regulatory tailwind.</p>
+                            <p><strong>Target founders:</strong> Chemistry PhDs, spinouts from Honeywell or Chemours</p>
+                        </div>
                     </div>
 
-                    <div class="company-card" style="border-color: var(--accent-green);">
-                        <h4 style="color: var(--accent-green);">Tier 1: Thermal Management Software/AI</h4>
-                        <p>CDUs are hardware; optimization is software. Dynamic cooling optimization can save 10-20% energy. Software margins >> hardware margins.</p>
-                        <p><strong>Who should do this:</strong> ML engineers with DC operations experience</p>
-                        <p><strong>Potential acquirers:</strong> Schneider, Vertiv, Siemens, DC operators</p>
+                    <div class="opportunity-card tier1">
+                        <div>
+                            <div class="opportunity-title">Thermal Management Software</div>
+                            <div class="opportunity-tier">Tier 1 &middot; Defensible</div>
+                        </div>
+                        <div class="opportunity-desc">
+                            <p>CDUs are hardware; optimization is software. Dynamic cooling optimization delivers 10-20% energy savings. Software margins significantly exceed hardware margins. Data moat compounds over time.</p>
+                            <p><strong>Target founders:</strong> ML engineers with data center operations experience</p>
+                        </div>
                     </div>
 
-                    <div class="company-card" style="border-color: var(--accent-green);">
-                        <h4 style="color: var(--accent-green);">Tier 1: Emerging Market Regional Champion</h4>
-                        <p>India, Southeast Asia, Middle East scaling fast. Global players have limited local presence. Relationships and local manufacturing favor locals.</p>
-                        <p><strong>Who should do this:</strong> Founders based in target geography with DC relationships</p>
-                        <p><strong>Potential acquirers:</strong> Regional conglomerates, global players seeking entry</p>
+                    <div class="opportunity-card tier1">
+                        <div>
+                            <div class="opportunity-title">Emerging Market Champion</div>
+                            <div class="opportunity-tier">Tier 1 &middot; Defensible</div>
+                        </div>
+                        <div class="opportunity-desc">
+                            <p>India, Southeast Asia, and Middle East scaling capacity rapidly. Global players have limited local presence. Relationships and local manufacturing create sustainable advantage.</p>
+                            <p><strong>Target founders:</strong> Based in target geography with existing DC operator relationships</p>
+                        </div>
                     </div>
 
-                    <div class="company-card" style="border-color: var(--accent-yellow);">
-                        <h4 style="color: var(--accent-yellow);">Tier 2: Edge Computing Cooling</h4>
-                        <p>Edge deployments (5-50kW) have different needs. Telecom 5G, retail, manufacturing. Modular, self-contained solutions. Higher margins, different sales channel.</p>
-                        <p><strong>Limitation:</strong> Smaller TAM (~$500M-1B), may not be venture-scale</p>
+                    <div class="opportunity-card tier2">
+                        <div>
+                            <div class="opportunity-title">Edge Computing Cooling</div>
+                            <div class="opportunity-tier">Tier 2 &middot; Niche</div>
+                        </div>
+                        <div class="opportunity-desc">
+                            <p>Edge deployments (5-50kW) have distinct requirements: modular, self-contained, ruggedized. Higher margins per unit, different sales channels. TAM limitation of approximately $500M-1B may constrain venture outcomes.</p>
+                        </div>
                     </div>
 
-                    <div class="company-card" style="border-color: var(--accent-yellow);">
-                        <h4 style="color: var(--accent-yellow);">Tier 2: Defense/Aerospace/HPC Specialty</h4>
-                        <p>Government/defense has specific requirements (ITAR, clearances). High margins, sticky relationships, less price-sensitive.</p>
-                        <p><strong>Limitation:</strong> Long procurement cycles, small customer base</p>
+                    <div class="opportunity-card tier2">
+                        <div>
+                            <div class="opportunity-title">Defense and Aerospace</div>
+                            <div class="opportunity-tier">Tier 2 &middot; Niche</div>
+                        </div>
+                        <div class="opportunity-desc">
+                            <p>Government sector has specific requirements (ITAR compliance, security clearances). High margins, sticky relationships, less price-sensitive procurement. Extended sales cycles and small customer base present limitations.</p>
+                        </div>
                     </div>
 
-                    <div class="company-card" style="border-color: var(--accent-red);">
-                        <h4 style="color: var(--accent-red);">AVOID: Generic Direct-to-Chip CDUs</h4>
-                        <p>Vertiv, CoolIT, Motivair have this locked. Hyperscalers won't switch for marginal improvement. Manufacturing scale economics favor incumbents.</p>
-                        <p><strong>Your differentiation:</strong> "Better engineering" is not enough</p>
+                    <div class="opportunity-card avoid">
+                        <div>
+                            <div class="opportunity-title">Generic Direct-to-Chip CDUs</div>
+                            <div class="opportunity-tier">Avoid</div>
+                        </div>
+                        <div class="opportunity-desc">
+                            <p>Vertiv, CoolIT, and Motivair have established dominant positions. Hyperscalers will not switch vendors for marginal improvements. Manufacturing scale economics favor incumbents. "Better engineering" is not sufficient differentiation.</p>
+                        </div>
                     </div>
                 </div>
 
-                <h3>Go-to-Market Reality</h3>
+                <h3>Go-to-Market Timeline</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Duration</th>
+                            <th>Activities</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Discovery</td>
+                            <td>Months 0-3</td>
+                            <td>Initial meetings, NDA execution, requirements gathering</td>
+                        </tr>
+                        <tr>
+                            <td>Technical Evaluation</td>
+                            <td>Months 3-6</td>
+                            <td>Lab testing, specification review</td>
+                        </tr>
+                        <tr>
+                            <td>Pilot Deployment</td>
+                            <td>Months 6-12</td>
+                            <td>Single rack or row installation</td>
+                        </tr>
+                        <tr>
+                            <td>Validation</td>
+                            <td>Months 12-18</td>
+                            <td>Performance verification, procurement process</td>
+                        </tr>
+                        <tr>
+                            <td>Production</td>
+                            <td>Months 18-24</td>
+                            <td>Initial production order</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>Implication:</strong> Plan for 18-24 months from initial engagement to meaningful revenue. Capital requirements of $30-50M to reach exit-ready scale.</p>
 
-                <div class="thesis-detail">
-                    <h4>Sales Cycle Timeline</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Timeline</th>
-                                <th>Stage</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Month 0-3</td><td>Initial meetings, NDA, requirements gathering</td></tr>
-                            <tr><td>Month 3-6</td><td>Technical evaluation, lab testing</td></tr>
-                            <tr><td>Month 6-12</td><td>Pilot deployment (single rack/row)</td></tr>
-                            <tr><td>Month 12-18</td><td>Performance validation, procurement process</td></tr>
-                            <tr><td>Month 18-24</td><td>Production order (maybe)</td></tr>
-                            <tr><td>Month 24-36</td><td>Scale deployment</td></tr>
-                        </tbody>
-                    </table>
-                    <p style="margin-top: 15px;"><strong>Translation:</strong> 18-24 months from first meeting to meaningful revenue. Plan runway accordingly.</p>
-
-                    <h4 style="margin-top: 30px;">What Hyperscalers Actually Care About</h4>
-                    <ol style="color: var(--text-secondary);">
-                        <li><strong>Reliability</strong> (>99.99% uptime) - More than efficiency</li>
-                        <li><strong>Serviceability</strong> - Can their techs maintain it?</li>
-                        <li><strong>Supply chain</strong> - Can you deliver 1,000 units?</li>
-                        <li><strong>Qualification</strong> - Tested with their hardware?</li>
-                        <li><strong>Financial stability</strong> - Will you exist in 5 years?</li>
-                    </ol>
-                    <p style="margin-top: 15px;"><strong>Note:</strong> Technical performance is NOT #1. They assume your tech works. They worry about everything else.</p>
-                </div>
-
-                <h3>Realistic Exit Expectations</h3>
+                <h3>Exit Expectations</h3>
                 <table>
                     <thead>
                         <tr>
@@ -972,60 +1177,62 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>Pre-revenue</td><td>$10-30M (based on tech/team/TAM)</td></tr>
-                        <tr><td>$1-5M revenue</td><td>$30-80M (6-15x revenue)</td></tr>
-                        <tr><td>$5-20M revenue</td><td>$50-150M (5-10x revenue)</td></tr>
-                        <tr><td>$20-50M revenue</td><td>$100-300M (4-8x revenue)</td></tr>
+                        <tr>
+                            <td>Pre-revenue</td>
+                            <td>$10-30M</td>
+                        </tr>
+                        <tr>
+                            <td>$1-5M revenue</td>
+                            <td>$30-80M</td>
+                        </tr>
+                        <tr>
+                            <td>$5-20M revenue</td>
+                            <td>$50-150M</td>
+                        </tr>
+                        <tr>
+                            <td>$20-50M revenue</td>
+                            <td>$100-300M</td>
+                        </tr>
                     </tbody>
                 </table>
-                <p><strong>Reality check:</strong> Most DC cooling exits are $50-200M. $1B+ outcomes are rare in hardware. Exits happen at <em>strategic value</em> (filling portfolio gaps), not revenue multiples.</p>
+                <p>Most data center cooling exits fall in the $50-200M range. Outcomes exceeding $1B are uncommon in hardware businesses. Exits occur at strategic value (portfolio gap completion) rather than revenue multiples.</p>
 
-                <h3>The Founder Checklist</h3>
-
-                <div class="bull-bear">
-                    <div class="bull">
-                        <h4>START a company if...</h4>
+                <h3>Founder Decision Framework</h3>
+                <div class="two-col">
+                    <div class="col-box green">
+                        <h4>Consider Starting If</h4>
                         <ul>
-                            <li>You have a specific technical breakthrough (not incremental)</li>
-                            <li>You have existing hyperscaler/DC operator relationships</li>
-                            <li>You're targeting an underserved niche (edge, emerging markets, defense)</li>
-                            <li>You're building software/services layer (not pure hardware)</li>
-                            <li>You're comfortable with $50-200M exit range</li>
-                            <li>You have 5-7 years of patience</li>
+                            <li>You have a specific technical breakthrough (not incremental improvement)</li>
+                            <li>You have existing hyperscaler or DC operator relationships</li>
+                            <li>You are targeting an underserved niche</li>
+                            <li>You are building software or services (not pure hardware)</li>
+                            <li>You accept $50-200M exit outcomes</li>
+                            <li>You have 5-7 year time horizon</li>
                         </ul>
                     </div>
-                    <div class="bear">
-                        <h4>DON'T START if...</h4>
+                    <div class="col-box red">
+                        <h4>Do Not Start If</h4>
                         <ul>
-                            <li>Your plan is "build a better CDU" (crowded, commoditizing)</li>
-                            <li>You're a first-time hardware entrepreneur</li>
-                            <li>You need venture-scale ($1B+) outcome</li>
-                            <li>You don't have DC industry experience</li>
-                            <li>You're competing directly with Vertiv/CoolIT</li>
-                            <li>Your differentiation is "better engineering" (everyone says this)</li>
+                            <li>Your plan is "build a better CDU"</li>
+                            <li>You are a first-time hardware entrepreneur</li>
+                            <li>You require venture-scale ($1B+) outcomes</li>
+                            <li>You lack data center industry experience</li>
+                            <li>You would compete directly with Vertiv or CoolIT</li>
+                            <li>Your differentiation is "better engineering"</li>
                         </ul>
                     </div>
                 </div>
 
                 <h3>Alternative Paths</h3>
-                <div class="company-grid">
-                    <div class="company-card">
-                        <h4>Join a Scaling Startup</h4>
-                        <p>ZutaCore, Accelsius actively hiring. Get equity + salary. Learn the market from inside. Lower risk, still meaningful upside.</p>
-                    </div>
-                    <div class="company-card">
-                        <h4>Join a Strategic Acquirer</h4>
-                        <p>Vertiv, Schneider, Eaton all building teams. Work on cooling strategy. Network with customers. Exit to start company later.</p>
-                    </div>
-                    <div class="company-card">
-                        <h4>Start Adjacent Business</h4>
-                        <p>DC facility design consulting. Thermal testing/qualification services. Maintenance/service provider. Lower risk, faster revenue.</p>
-                    </div>
-                </div>
+                <ul>
+                    <li><strong>Join a scaling startup:</strong> ZutaCore and Accelsius are actively hiring. Obtain equity exposure while learning the market with lower personal risk.</li>
+                    <li><strong>Join a strategic acquirer:</strong> Vertiv, Schneider Electric, and Eaton are building teams. Develop customer relationships and industry expertise before founding a company.</li>
+                    <li><strong>Start an adjacent business:</strong> Data center facility design consulting, thermal testing and qualification services, or maintenance service provision. Lower risk with faster path to revenue.</li>
+                </ul>
 
-                <div class="insight-box">
-                    <h4>The Bottom Line</h4>
-                    <p style="margin: 0; color: var(--text-primary);">The liquid cooling market is real and growing. But for a new startup in 2026, the timing may be suboptimal. Technology innovation phase is ending. Market consolidation is accelerating. Customer relationships are locked in. <strong>The market is great. The startup opportunity is harder.</strong></p>
+                <div class="callout">
+                    <h4>Summary Assessment</h4>
+                    <p>The liquid cooling market represents a significant and growing opportunity. However, for a new startup in 2026, timing presents challenges. The technology innovation phase is concluding. Market consolidation is accelerating. Customer relationships are established. The market opportunity is substantial; the startup entry opportunity is more constrained.</p>
                 </div>
             </section>
         </div>
@@ -1033,32 +1240,10 @@
 
     <footer>
         <div class="container">
-            <p>Data Center Cooling Investment Research | April 2026</p>
-            <p style="margin-top: 10px;">This analysis is for informational purposes only and does not constitute investment advice.</p>
+            <p><strong>Data Center Cooling: Investment Thesis Analysis</strong></p>
+            <p>April 2026</p>
+            <p style="margin-top: 16px;">This analysis is provided for informational purposes only and does not constitute investment advice. Past performance is not indicative of future results.</p>
         </div>
     </footer>
-
-    <script>
-        // Simple navigation highlighting
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('nav a');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (scrollY >= sectionTop - 150) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
